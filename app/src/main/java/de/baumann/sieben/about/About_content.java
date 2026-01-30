@@ -51,7 +51,7 @@ class About_content {
                 .text(R.string.about_changelog)
                 .subText(R.string.about_changelog_summary)
                 .icon(R.drawable.format_list_bulleted)
-                .setOnClickListener(ConvenienceBuilder.createWebViewDialogOnClickAction(c, c.getString(R.string.about_changelog), "https://github.com/scoute-dich/Sieben/blob/master/CHANGELOG.md", true, false))
+                .setOnClickListener(ConvenienceBuilder.createWebViewDialogOnClickAction(c, c.getString(R.string.about_changelog), "https://github.com/gerbenvoshol/Sieben/blob/master/CHANGELOG.md", true, false))
                 .build());
 
         appCardBuilder.addItem(new MaterialAboutActionItem.Builder()
@@ -110,7 +110,7 @@ class About_content {
                 .text(R.string.about_dev)
                 .subText(R.string.about_dev_summary)
                 .icon(R.drawable.gaukler_faun)
-                .setOnClickListener(ConvenienceBuilder.createWebViewDialogOnClickAction(c, c.getString(R.string.about_dev), "https://github.com/scoute-dich/", true, false))
+                .setOnClickListener(ConvenienceBuilder.createWebViewDialogOnClickAction(c, c.getString(R.string.about_dev), "https://github.com/gerbenvoshol/", true, false))
                 .build());
 
         authorCardBuilder.addItem(new MaterialAboutActionItem.Builder()

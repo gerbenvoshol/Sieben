@@ -23,7 +23,7 @@ A small android application to perform the seven minutes workout.
 English, German, French, Japanese, Spanish, Italian, Portuguese, Dutch, Russian
 
 ### Links:
-- Download [APK](https://github.com/scoute-dich/Sieben/releases)
-- Watch [Changelog](https://github.com/scoute-dich/Sieben/blob/master/CHANGELOG.md)
-- See [license](https://github.com/scoute-dich/Sieben/blob/master/LICENSE.md)
-- See [screenshots](https://github.com/scoute-dich/Sieben/blob/master/SCREENSHOTS.md)
+- Download [APK](https://github.com/gerbenvoshol/Sieben/releases)
+- Watch [Changelog](https://github.com/gerbenvoshol/Sieben/blob/master/CHANGELOG.md)
+- See [license](https://github.com/gerbenvoshol/Sieben/blob/master/LICENSE.md)
+- See [screenshots](https://github.com/gerbenvoshol/Sieben/blob/master/SCREENSHOTS.md)

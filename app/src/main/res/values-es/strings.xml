@@ -130,7 +130,7 @@
 
     //License Dialog
     <string name="about_title">Copyright © 2016 por Gaukler Faun</string>
-    <string name="about_text">Para más información visite el proyecto en github: https://github.com/scoute-dich/Sieben&lt;br&gt;&lt;br&gt; Este programa es software libre: puede redistribuirlo o modificarlo bajo los términos de la GNU General Public License como está publicada por la Free Software Foundation, bien en su versión 3, u opcionalmente cualquiera posterior.          Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA; ni tan siquiera la garantía implícita COMERCIAL o de AJUSTARSE A UN PROPÓSITO CONCRETO. Vea la licencia GNU General Public para más detalles.          Debería haber recibido una copia de la licencia GNU General Public con este programa. Si no, vea http://www.gnu.org/licenses.</string>
+    <string name="about_text">Para más información visite el proyecto en github: https://github.com/gerbenvoshol/Sieben&lt;br&gt;&lt;br&gt; Este programa es software libre: puede redistribuirlo o modificarlo bajo los términos de la GNU General Public License como está publicada por la Free Software Foundation, bien en su versión 3, u opcionalmente cualquiera posterior.          Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA; ni tan siquiera la garantía implícita COMERCIAL o de AJUSTARSE A UN PROPÓSITO CONCRETO. Vea la licencia GNU General Public para más detalles.          Debería haber recibido una copia de la licencia GNU General Public con este programa. Si no, vea http://www.gnu.org/licenses.</string>
 
     // About
 
