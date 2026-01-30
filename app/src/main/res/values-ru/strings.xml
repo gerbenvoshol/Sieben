@@ -220,4 +220,82 @@
         <item>60</item>
     </string-array>
 
+
+    <!-- New strings from TeknoCepni v2.0-v2.3 -->
+    <string name="app_ok">OK</string>
+    <string name="app_no">Отмена</string>
+    <string name="app_sec">секунды</string>
+    <string name="app_chosenTime">Выбранная продолжительность:</string>
+    <string name="app_standardTime">(Стандарт:</string>
+    <string name="app_con">Подтверждение</string>
+    <string name="app_con_message">Вы действительно хотите сбросить?</string>
+
+    <string name="stat_time">Общее время:</string>
+    <string name="stat_number">Количество:</string>
+    <string name="stat_average">Среднее:</string>
+
+    <string name="sort">Сортировать записи</string>
+    <string name="sort_icon">по имени</string>
+    <string name="sort_number">по количеству</string>
+    <string name="sort_hms">по общему времени</string>
+    <string name="sort_average">по среднему</string>
+    <string name="sort_icon2">имя</string>
+    <string name="sort_number2">количество</string>
+    <string name="sort_hms2">общее время (ч:м:с)</string>
+    <string name="sort_average2">среднее (м:с)</string>
+
+    <string name="intro1_title">Seven</string>
+    <string name="intro1_text">Спасибо, что выбрали "Seven". Это open source и полностью бесплатное приложение (как в свободе).</string>
+
+    <string name="intro2_title">Жесты</string>
+    <string name="intro2_text">Проведите вниз по изображению, чтобы сделать паузу, проведите вверх, чтобы продолжить тренировку. Проведите вправо, чтобы перейти к предыдущему упражнению, и влево, чтобы пропустить текущее.</string>
+
+    <string name="intro3_title">Настройки</string>
+    <string name="intro3_text">Есть несколько базовых настроек для приложения (продолжительность упражнений и пауз, выбор упражнений). Вы также можете открыть статистический обзор выполненных упражнений. Теперь давайте начнем ...</string>
+
+    <string name="action_reset">Сбросить продолжительность</string>
+
+    <string name="pref_3">Расширенные</string>
+    <string name="pref_4">Разное</string>
+
+    <string name="action_durationEx">Продолжительность на упражнение</string>
+    <string name="action_durationEx_summary">Установить разную продолжительность для каждого упражнения.</string>
+
+    <string name="action_stat">Статистика</string>
+    <string name="action_stat_summary">Показать информацию о выполненных упражнениях, общем времени и среднем на упражнение.</string>
+
+    <string name="action_endless">Бесконечно</string>
+    <string name="action_endless_summary">Начать тренировку снова после последнего упражнения.</string>
+
+    <string name="action_duration2">Продолжительность: Пауза</string>
+    <string name="action_exercises_summary">Выберите упражнения, которые хотите выполнить.</string>
+
+    <string name="about_settings">О программе ... и прочее</string>
+    <string name="about_settings_text">Список изменений, помощь, лицензия, используемые библиотеки и многое другое.</string>
+    <string name="about_title_dev">Разработчик</string>
+    <string name="about_title_ext">Участники</string>
+    <string name="about_title_ext1">Перевод на французский</string>
+    <string name="about_title_ext2">Небольшие исправления и свисток</string>
+    <string name="about_title_ext3">Перевод на японский</string>
+    <string name="about_title_ext4">Перевод на испанский</string>
+    <string name="about_title_libs">Используемые ресурсы</string>
+
+    <string name="about_intro">Введение</string>
+    <string name="about_intro_summary">Показать вводный экран еще раз.</string>
+    <string name="about_changelog">Список изменений</string>
+    <string name="about_changelog_summary">Открыть сайт Github и посмотреть, что нового ... (требуется подключение к интернету)</string>
+    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev_summary">Открыть мой профиль на Github (требуется подключение к интернету).</string>
+    <string name="about_donate">Пожертвовать</string>
+    <string name="about_donate_summary">Если вам нравится приложение, вы можете сделать мне пожертвование через Paypal (требуется подключение к интернету).</string>
+    <string name="about_license">Лицензия</string>
+    <string name="about_license_summary">Приложение лицензировано под GPL и полностью открыто и бесплатно (как в свободе).</string>
+    <string name="about_license_1_title">Изображения тренировки</string>
+    <string name="about_license_1">Изображения тренировки можно найти в блоге "C. Gilbert". Спасибо ей за разрешение использовать их в приложении.</string>
+    <string name="about_license_2_title">Свисток</string>
+    <string name="about_license_2">Свисток доступен по лицензии Creative Commons 0.</string>
+    <string name="about_license_3">Используется для создания вводного экрана.</string>
+    <string name="about_license_7">Используется для создания экрана "О программе".</string>
+    <string name="about_license_8">Источник почти всех иконок.</string>
+
 </resources>

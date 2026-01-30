@@ -219,4 +219,82 @@
         <item>60</item>
     </string-array>
 
+
+    <!-- New strings from TeknoCepni v2.0-v2.3 -->
+    <string name="app_ok">OK</string>
+    <string name="app_no">Annulla</string>
+    <string name="app_sec">secondi</string>
+    <string name="app_chosenTime">Durata scelta:</string>
+    <string name="app_standardTime">(Standard:</string>
+    <string name="app_con">Conferma</string>
+    <string name="app_con_message">Vuoi davvero ripristinare?</string>
+
+    <string name="stat_time">Tempo totale:</string>
+    <string name="stat_number">Conteggio:</string>
+    <string name="stat_average">Media:</string>
+
+    <string name="sort">Ordina voci</string>
+    <string name="sort_icon">per nome</string>
+    <string name="sort_number">per conteggio</string>
+    <string name="sort_hms">per tempo totale</string>
+    <string name="sort_average">per media</string>
+    <string name="sort_icon2">nome</string>
+    <string name="sort_number2">conteggio</string>
+    <string name="sort_hms2">tempo totale (h:m:s)</string>
+    <string name="sort_average2">media (m:s)</string>
+
+    <string name="intro1_title">Seven</string>
+    <string name="intro1_text">Grazie per aver scelto "Seven". È open source e completamente gratuito (come in libertà).</string>
+
+    <string name="intro2_title">Gesti</string>
+    <string name="intro2_text">Scorri verso il basso sull'immagine per fare una pausa, scorri verso l'alto per continuare l'allenamento. Scorri a destra per raggiungere l'esercizio precedente e a sinistra per saltare quello attuale.</string>
+
+    <string name="intro3_title">Impostazioni</string>
+    <string name="intro3_text">Ci sono alcune impostazioni di base per l'app (durata di esercizi e pause, scelta esercizi). Puoi anche aprire una panoramica statistica degli esercizi eseguiti. Ora, iniziamo ...</string>
+
+    <string name="action_reset">Ripristina durate</string>
+
+    <string name="pref_3">Avanzate</string>
+    <string name="pref_4">Varie</string>
+
+    <string name="action_durationEx">Durata per esercizio</string>
+    <string name="action_durationEx_summary">Imposta una durata diversa per ogni esercizio.</string>
+
+    <string name="action_stat">Statistiche</string>
+    <string name="action_stat_summary">Mostra informazioni sugli esercizi eseguiti, tempo totale e media per esercizio.</string>
+
+    <string name="action_endless">Infinito</string>
+    <string name="action_endless_summary">Ricomincia l'allenamento dopo l'ultimo esercizio.</string>
+
+    <string name="action_duration2">Durata: Pausa</string>
+    <string name="action_exercises_summary">Scegli gli esercizi che vuoi eseguire.</string>
+
+    <string name="about_settings">Informazioni ... e altro</string>
+    <string name="about_settings_text">Registro delle modifiche, aiuto, licenza, librerie utilizzate e altro.</string>
+    <string name="about_title_dev">Sviluppatore</string>
+    <string name="about_title_ext">Collaboratori</string>
+    <string name="about_title_ext1">Traduzione francese</string>
+    <string name="about_title_ext2">Piccole correzioni e fischietto</string>
+    <string name="about_title_ext3">Traduzione giapponese</string>
+    <string name="about_title_ext4">Traduzione spagnola</string>
+    <string name="about_title_libs">Risorse utilizzate</string>
+
+    <string name="about_intro">Introduzione</string>
+    <string name="about_intro_summary">Mostra di nuovo la schermata introduttiva.</string>
+    <string name="about_changelog">Registro delle modifiche</string>
+    <string name="about_changelog_summary">Apri il sito Github e scopri le novità ... (richiede connessione internet)</string>
+    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev_summary">Apri il mio profilo su Github (richiede connessione internet).</string>
+    <string name="about_donate">Dona</string>
+    <string name="about_donate_summary">Se ti piace l'app, puoi farmi una donazione tramite Paypal (richiede connessione internet).</string>
+    <string name="about_license">Licenza</string>
+    <string name="about_license_summary">L'app è rilasciata sotto licenza GPL ed è completamente open source e gratuita (come in libertà).</string>
+    <string name="about_license_1_title">Immagini dell'allenamento</string>
+    <string name="about_license_1">Le immagini dell'allenamento si trovano sul blog di "C. Gilbert". Grazie a lei per il permesso di usarle nell'app.</string>
+    <string name="about_license_2_title">Fischietto</string>
+    <string name="about_license_2">Il fischietto è disponibile sotto licenza Creative Commons 0.</string>
+    <string name="about_license_3">Usato per creare la schermata introduttiva.</string>
+    <string name="about_license_7">Usato per creare la schermata "Informazioni".</string>
+    <string name="about_license_8">La fonte di quasi tutte le icone.</string>
+
 </resources>

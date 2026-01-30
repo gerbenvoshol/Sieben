@@ -220,4 +220,82 @@
         <item>60</item>
     </string-array>
 
+
+    <!-- New strings from TeknoCepni v2.0-v2.3 -->
+    <string name="app_ok">OK</string>
+    <string name="app_no">Annuleren</string>
+    <string name="app_sec">seconden</string>
+    <string name="app_chosenTime">Gekozen duur:</string>
+    <string name="app_standardTime">(Standaard:</string>
+    <string name="app_con">Bevestiging</string>
+    <string name="app_con_message">Wil je echt resetten?</string>
+
+    <string name="stat_time">Totale tijd:</string>
+    <string name="stat_number">Aantal:</string>
+    <string name="stat_average">Gemiddelde:</string>
+
+    <string name="sort">Items sorteren</string>
+    <string name="sort_icon">op naam</string>
+    <string name="sort_number">op aantal</string>
+    <string name="sort_hms">op totale tijd</string>
+    <string name="sort_average">op gemiddelde</string>
+    <string name="sort_icon2">naam</string>
+    <string name="sort_number2">aantal</string>
+    <string name="sort_hms2">totale tijd (u:m:s)</string>
+    <string name="sort_average2">gemiddelde (m:s)</string>
+
+    <string name="intro1_title">Seven</string>
+    <string name="intro1_text">Bedankt voor het kiezen van "Seven". Het is open source en volledig gratis (als in vrijheid).</string>
+
+    <string name="intro2_title">Gebaren</string>
+    <string name="intro2_text">Veeg naar beneden op de afbeelding om een pauze te nemen, veeg naar boven om door te gaan met de training. Veeg naar rechts om naar de vorige oefening te gaan en naar links om de huidige over te slaan.</string>
+
+    <string name="intro3_title">Instellingen</string>
+    <string name="intro3_text">Er zijn enkele basisinstellingen voor de app (duur van oefeningen en pauzes, kies oefeningen). Je kunt ook een statistisch overzicht openen van uitgevoerde oefeningen. Nu, laten we beginnen ...</string>
+
+    <string name="action_reset">Duur resetten</string>
+
+    <string name="pref_3">Geavanceerd</string>
+    <string name="pref_4">Diversen</string>
+
+    <string name="action_durationEx">Duur per oefening</string>
+    <string name="action_durationEx_summary">Stel verschillende duur per oefening in.</string>
+
+    <string name="action_stat">Statistieken</string>
+    <string name="action_stat_summary">Toon informatie over uitgevoerde oefeningen, totale tijd en gemiddelde per oefening.</string>
+
+    <string name="action_endless">Eindeloos</string>
+    <string name="action_endless_summary">Start training opnieuw na de laatste oefening.</string>
+
+    <string name="action_duration2">Duur: Pauze</string>
+    <string name="action_exercises_summary">Kies de oefeningen die je wilt uitvoeren.</string>
+
+    <string name="about_settings">Over ... en andere dingen</string>
+    <string name="about_settings_text">Wijzigingslogboek, help, licentie, gebruikte bibliotheken en meer.</string>
+    <string name="about_title_dev">Ontwikkelaar</string>
+    <string name="about_title_ext">Bijdragers</string>
+    <string name="about_title_ext1">Franse vertaling</string>
+    <string name="about_title_ext2">Kleine correcties en fluitje</string>
+    <string name="about_title_ext3">Japanse vertaling</string>
+    <string name="about_title_ext4">Spaanse vertaling</string>
+    <string name="about_title_libs">Gebruikte bronnen</string>
+
+    <string name="about_intro">Introductie</string>
+    <string name="about_intro_summary">Toon het introductie scherm nog een keer.</string>
+    <string name="about_changelog">Wijzigingslogboek</string>
+    <string name="about_changelog_summary">Open Github-site en bekijk wat er nieuw is ... (internetverbinding vereist)</string>
+    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev_summary">Open mijn profiel op Github (internetverbinding vereist).</string>
+    <string name="about_donate">Doneren</string>
+    <string name="about_donate_summary">Als je de app leuk vindt, kun je me een donatie doen via Paypal (internetverbinding vereist).</string>
+    <string name="about_license">Licentie</string>
+    <string name="about_license_summary">De app is gelicenseerd onder GPL en is volledig open source en gratis (als in vrijheid).</string>
+    <string name="about_license_1_title">Trainingsafbeeldingen</string>
+    <string name="about_license_1">De afbeeldingen van de training zijn te vinden op de blog van "C. Gilbert". Dank aan haar voor de toestemming om ze in de app te gebruiken.</string>
+    <string name="about_license_2_title">Fluitje</string>
+    <string name="about_license_2">Het fluitje is beschikbaar onder de Creative Commons 0 Licentie.</string>
+    <string name="about_license_3">Gebruikt om het introductie scherm te bouwen.</string>
+    <string name="about_license_7">Gebruikt om het "Over" scherm te maken.</string>
+    <string name="about_license_8">De bron van bijna alle iconen.</string>
+
 </resources>
