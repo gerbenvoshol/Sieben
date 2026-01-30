@@ -39,7 +39,7 @@ All requested features from the problem statement have been completed:
 
 ## Language Support Overview
 
-The app now supports **7 languages**:
+The app now supports **9 languages**:
 
 1. **English** (en) - Default, original
 2. **German** (de) - Existing
@@ -48,13 +48,18 @@ The app now supports **7 languages**:
 5. **Spanish** (es) - **NEW** ✨
 6. **Italian** (it) - **NEW** ✨
 7. **Portuguese** (pt) - **NEW** ✨
+8. **Dutch** (nl) - **NEW** ✨
+9. **Russian** (ru) - **NEW** ✨
 
 ## Files Modified
 
-### New Files (6)
+### New Files (9)
 - `app/src/main/res/values-es/strings.xml`
 - `app/src/main/res/values-it/strings.xml`
 - `app/src/main/res/values-pt/strings.xml`
+- `app/src/main/res/values-nl/strings.xml`
+- `app/src/main/res/values-ru/strings.xml`
+- `build-apk.sh` - Automated build script
 - `BUILD.md`
 - `RELEASE_NOTES_v1.9.md`
 - `APK_BUILD_STATUS.md`

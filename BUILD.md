@@ -2,14 +2,43 @@
 
 This document describes how to build the Sieben Android application APK.
 
-## Prerequisites
+## Quick Start - Automated Build Script (Recommended)
+
+We provide an automated build script that handles all prerequisites and builds the APK:
+
+```bash
+# Make script executable (first time only)
+chmod +x build-apk.sh
+
+# Build debug APK
+./build-apk.sh
+
+# Build release APK
+./build-apk.sh --release
+
+# Build and sign release APK
+./build-apk.sh --release --sign
+
+# Clean build
+./build-apk.sh --clean --release
+```
+
+The script will:
+- Check for Java, Android SDK, and Gradle
+- Download missing dependencies automatically
+- Build the APK
+- Optionally sign the APK for distribution
+
+For more options, run: `./build-apk.sh --help`
+
+## Manual Build Instructions
+
+### Prerequisites
 
 - Android SDK with API level 25 or higher
 - Build Tools version 25.0.0 or higher  
 - Gradle 2.2.2 or higher
 - Java Development Kit (JDK) 8 or higher
-
-## Build Instructions
 
 ### Using Gradle (Recommended)
 
