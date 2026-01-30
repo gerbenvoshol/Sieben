@@ -3,28 +3,71 @@
     <string name="app_name">Sieben</string>
     <string name="start">Zum Beginnen (nach 5 sek. Pause) nach oben wischen …</string>
     <string name="start2">5 Sekunden Pause vor der ersten Übung …</string>
+    <string name="app_ok">OK</string>
+    <string name="app_no">Abbrechen</string>
+    <string name="app_sec">Sekunden</string>
+    <string name="app_chosenTime">Ausgewählte Dauer:</string>
+    <string name="app_standardTime">(Standard:</string>
+    <string name="app_con">Bestätigung</string>
+    <string name="app_con_message">Möchtest du die Einstellungen wirklich löschen?</string>
+
+    //Statistics
+    <string name="stat_time">Gesamt:</string>
+    <string name="stat_number">Anzahl:</string>
+    <string name="stat_average">Durchschnitt:</string>
+
+    <string name="sort">Einträge sortieren</string>
+    <string name="sort_icon">nach Titel</string>
+    <string name="sort_number">nach Anzahl</string>
+    <string name="sort_hms">nach Gesamtzeit</string>
+    <string name="sort_average">nach Durchschnitt</string>
+    <string name="sort_icon2">Titel</string>
+    <string name="sort_number2">Anzahl</string>
+    <string name="sort_hms2">Gesamtzeit (h:m:s)</string>
+    <string name="sort_average2">Durchschnitt (m:s)</string>
+
+    //Intro
+
+    <string name="intro1_title">Sieben</string>
+    <string name="intro1_text">Danke, dass du dich für \"Sieben\" entschieden hast. Die App ist quelloffen und komplett frei (wie in
+        Freiheit).</string>
+
+    <string name="intro2_title">Gesten</string>
+    <string name="intro2_text">Wische auf dem Bild nach unten, um eine Pause zu machen und nach oben um weiterzumachen. Wische
+        nach rechts um zur vorherigen und nach links um zur nächsten Übung zu gelangen.</string>
+
+    <string name="intro3_title">Einstellungen</string>
+    <string name="intro3_text">Es gibt ein paar einfache Einstellungen (Dauer der Übungen und Pausen, Übungen auswählen). Außerdem
+        gibt es eine kleine Statistik über deine beendeten Übungen. So und jetzt, geht\'s los …</string>
+
 
     //Menu Settings
     <string name="action_settings">Einstellungen | Hilfe | Über</string>
-    <string name="action_license">Lizenz</string>
-    <string name="action_help">Hilfe</string>
-    <string name="action_changelog">Änderungen</string>
+    <string name="action_reset">Dauer zurücksetzen</string>
 
-    <string name="pref_1">Über die App</string>
     <string name="pref_2">Einstellungen</string>
+    <string name="pref_3">Erweitert</string>
+    <string name="pref_4">Sonstiges</string>
 
-    <string name="action_changelog_summary">Was gibt es neues …</string>
-    <string name="action_license_summary">Linzensiert unter GPL3</string>
-    <string name="action_help_summary">Erklärung der Wischfunktion …</string>
+    <string name="action_durationEx">Dauer pro Übung</string>
+    <string name="action_durationEx_summary">Stelle eine unterschiedliche Dauer pro Übung ein.</string>
+
+    <string name="action_endless">Endlostraining</string>
+    <string name="action_endless_summary">Workout nach der letzten Übung noch einmal starten.</string>
+
+    <string name="action_stat">Statistik</string>
+    <string name="action_stat_summary">Ein paar Informationen über die Anzahl der gemachten Übungen und die Gesamtzeit sowie die
+        Durchschnittszeit der einzelnen Übungen.</string>
 
     <string name="action_tts">TTS</string>
     <string name="action_tts_summary">Möchtest du Sprachanweisungen hören?</string>
     <string name="action_beep">Trillerpfeife</string>
     <string name="action_beep_summary">Möchtest du am Ende jeder Übung ein Signal hören?</string>
-    <string name="action_duration">Dauer</string>
-    <string name="action_duration_summary">Stelle die Dauer der Übungen ein.</string>
+    <string name="action_duration">Dauer: Übung</string>
+    <string name="action_duration2">Dauer: Pausen</string>
 
     <string name="action_exercises">Übungen</string>
+    <string name="action_exercises_summary">Wähle die Übungen aus, die du machen willst.</string>
 
     //Snackbar
     <string name="sn_pause">Eine kurze Pause …</string>
@@ -89,20 +132,9 @@
     <string name="act_12ee" tools:keep="@string/act_12ee">Seitstütz</string>
 
     //License Dialog
-    <string name="about_yes">OK</string>
     <string name="about_title">Copyright © 2016  by Gaukler Faun</string>
     <string name="about_text">
-        &lt;b>Beteiligte:&lt;/b>&lt;br>&lt;br>
-
-        &lt;i>Entwicklung&lt;/i>&lt;br>
-        Gaukler Faun https://github.com/scoute-dich&lt;br> &lt;br>
-
-        &lt;i>Übersetzugen&lt;/i>&lt;br>
-        Französisch: jeberger https://github.com/jeberger&lt;br>
-        Japanisch: naofum https://github.com/naofum&lt;br> &lt;br>
-
-        &lt;i>Trillerpfeife und kleine Änderungen&lt;/i>&lt;br>
-        Mathias Lux https://github.com/dermotte&lt;br> &lt;br>
+        Besuche für mehr Informationen die Projektseite auf Github: https://github.com/scoute-dich/Sieben&lt;br>&lt;br>
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
@@ -115,110 +147,47 @@
         GNU General Public License for more details.
 
         You should have received a copy of the GNU General Public License
-        along with this program.  If not, see http://www.gnu.org/licenses.&lt;br> &lt;br>
+        along with this program.  If not, see http://www.gnu.org/licenses.</string>
 
-        &lt;i>Die Bilder für den Workout habe ich auf dem Blog von  \"C. Gilbert\" gefunden
-        (http://almostfearless.com/the-21-minute-workout-or-7-minutes-if-youre-really-fit). Ihr
+    // About
+
+    <string name="about_settings">Über die App … und Anderes</string>
+    <string name="about_settings_text">Changelog, Hilfe, Lizenz, benutzte Bibliotheken und mehr.</string>
+
+    <string name="about_title_dev">Entwickler</string>
+    <string name="about_title_libs">Benutzte Ressourcen</string>
+    <string name="about_title_ext">Beteiligte</string>
+    <string name="about_title_ext1">Französische Übersetzung</string>
+    <string name="about_title_ext2">Kleine Verbesserungen und die Trillerpfeife</string>
+    <string name="about_title_ext3">Japanische Übersetzung</string>
+    <string name="about_title_ext4">Spanische Übersetzung</string>
+
+    <string name="about_changelog">Änderungen</string>
+    <string name="about_changelog_summary">Öffne die Github Seite und schaue, was es Neues gibt … (braucht eine Internetverbindung)</string>
+
+    <string name="about_license">Lizenz</string>
+    <string name="about_license_summary">Die App steht unter der GPL Lizenz und ist komplett frei (wie in Freiheit). Der Quellcode kann
+        eingesehen werden.</string>
+
+    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev_summary">Öffne mein Github Profil (braucht eine Internetverbindung).</string>
+
+    <string name="about_intro">Einführung</string>
+    <string name="about_intro_summary">Zeige noch einmal die Einführung an.</string>
+
+    <string name="about_donate">Spende</string>
+    <string name="about_donate_summary">Wenn dir die App gefällt, kannst du mir gerne etwas über Paypal spenden (braucht eine
+        Internetverbindung).</string>
+
+    <string name="about_license_1_title">Workout Bilder</string>
+    <string name="about_license_2_title">Pfeife</string>
+    <string name="about_license_1">Die Bilder für den Workout habe ich auf dem Blog von  \"C. Gilbert\" gefunden. Ihr
         ebenfalls ein großes Dankeschön für die Erlaubnis die Bilder in dieser App nutzen
-        zu dürfen.&lt;/i>&lt;br>
+        zu dürfen.</string>
+    <string name="about_license_2">Die Trillerpfeife ist unter der Creative Commons 0 Lizenz erhältlich.</string>
+    <string name="about_license_3">Gebraucht um den \"Introschirm\" zu erstellen.</string>
+    <string name="about_license_7">Gebraucht um den \"About screen\" zu erstellen.</string>
+    <string name="about_license_8">Die Quelle von fast allen Icons.</string>
 
-        &lt;i>Die Trillerpfeife ist unter Creative Commons 0 Lizenz von
-        http://freesound.org/people/MentalSanityOff/sounds/218318/ erhältlich. &lt;/i></string>
-
-    //Changelog Dialog
-    <string name="changelog_text">
-        &lt;i>Besuche für mehr Informationen die Projektseite. Wenn du magst, kannst du mir dort über
-        Paypal eine Spende zukommen lassen:&lt;br>
-        https://github.com/scoute-dich/Sieben&lt;/i>&lt;br>&lt;br>
-
-        &lt;b>v 1.9:&lt;/b>&lt;br>
-        &#8226; Spanische Übersetzung hinzugefügt &lt;br>
-        &#8226; Italienische Übersetzung hinzugefügt &lt;br>
-        &#8226; Portugiesische Übersetzung hinzugefügt &lt;br>&lt;br>
-
-        &lt;b>v 1.8:&lt;/b>&lt;br>
-        &#8226; Wartungsrelease &lt;br>
-        &#8226; issue 18 fixed (thanks to rsiccho)&lt;br>
-        &#8226; Android N support&lt;br>&lt;br>
-
-        &lt;b>v 1.7.5:&lt;/b>&lt;br>
-        &#8226; Fix: Übungsbezeichnungen auf Deutsch &lt;br>
-        &#8226; Französische Übersetzung&lt;br>
-        &#8226; Trillerpfeife statt Piepton &lt;br>&lt;br>
-
-        &lt;b>v 1.7.4:&lt;/b>&lt;br>
-        &#8226; Bug fix: Übung 2&lt;br>&lt;br>
-
-        &lt;b>v 1.7.3:&lt;/b>&lt;br>
-        &#8226; Bild der ersten ausgewählten Übung beim Start&lt;br>
-        &#8226; Einstellungen: Dauer der Übungen&lt;br>
-        &#8226; Gradle Update&lt;br>
-        &#8226; Bug fixes&lt;br>&lt;br>
-
-        &lt;b>v 1.7.2:&lt;/b>&lt;br>
-        &#8226; Bug fixes&lt;br>&lt;br>
-
-        &lt;b>v 1.7 - 1.7.1:&lt;/b>&lt;br>
-        &#8226; Möglichkeit Übungen auszuwählen&lt;br>
-        &#8226; fixed lint Warnungen&lt;br>&lt;br>
-
-        &lt;b>v 1.6 - 1.6.2:&lt;/b>&lt;br>
-        &#8226; fixed ungültiger Link&lt;br>
-        &#8226; Fab-Knopf entfernt&lt;br>
-        &#8226; Ton Einstellungen&lt;br>
-        &#8226; letzte Übung in zwei Teile geteilt&lt;br>
-        &#8226; Pause vor der ersten Ünung&lt;br>&lt;br>
-
-        &lt;b>v 1.5:&lt;/b>&lt;br>
-        &#8226; Text zu Sprache Unterstützung&lt;br>
-        &#8226; Countdown Pause und fortfahren&lt;br>
-        &#8226; Code Verbesserungen&lt;br>&lt;br>
-
-        &lt;b>v 1.4:&lt;/b>&lt;br>
-        &#8226; Bildschirmorientierung: Portrait&lt;br>
-        &#8226; Projektlink gefixed&lt;br>&lt;br>
-
-        &lt;b>v 1.3.1:&lt;/b>&lt;br>
-        &#8226; Japanische Übersetzung&lt;br>&lt;br>
-
-        &lt;b>v 1.3:&lt;/b>&lt;br>
-        &#8226; Wischfunktion hinzugefügt (siehe Hilfe Dialog)&lt;br>
-        &#8226; Bildschirm bleibt an&lt;br>
-        &#8226; neue Dialoge (Hilfe/Changelog)&lt;br>&lt;br>
-
-        &lt;b>v 1.2:&lt;/b>&lt;br>
-        &#8226; Standardsprache auf Englisch geändert&lt;br>&lt;br>
-
-        &lt;b> v1.1:&lt;/b>&lt;br>
-        &#8226; bessere integration der Snackbar&lt;br>&lt;br>
-
-        &lt;b>v 1.0:&lt;/b>&lt;br>
-        &#8226; erste Version
-    </string>
-
-    //Help Dialog
-    <string name="help_text">
-        &lt;i>Nach links wischen: &lt;/i>zur nächsten Übung wechseln&lt;br>&lt;br>
-
-        &lt;i>Nach rechts wischen: &lt;/i>zur vorherigen Übung wechseln&lt;br>&lt;br>
-
-        &lt;i>Nach unten wischen: &lt;/i>eine Pause machen&lt;br>&lt;br>
-
-        &lt;i>Nach oben wischen: &lt;/i>die aktuelle Übung von vorne beginnen
-    </string>
-
-
-    // Arrays
-    <string-array name="listArrayDuration">
-        <item>30 Sekunden</item>
-        <item>45 Sekunden</item>
-        <item>60 Sekunden</item>
-    </string-array>
-
-    <string-array name="listValuesDuration">
-        <item>30</item>
-        <item>44</item>
-        <item>60</item>
-    </string-array>
 
 </resources>
