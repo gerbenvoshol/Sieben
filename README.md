@@ -8,7 +8,7 @@ A small android application to perform the seven minutes workout. It's very basi
 - you can perform the workout
 - pause and resume an exercise
 - jump to previous or next exercise
-- english and german
+- supports multiple languages: English, German, French, Japanese, Spanish, Italian, and Portuguese
 
 ### Links:
 - Download [APK](https://github.com/scoute-dich/Sieben/releases)

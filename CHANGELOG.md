@@ -1,3 +1,10 @@
+### v1.9
+- Added Spanish translation
+- Added Italian translation
+- Added Portuguese translation
+- Updated documentation
+- Version bump to 1.9
+
 ### v1.7.5
 - Fixed some German strings
 - Added French translation

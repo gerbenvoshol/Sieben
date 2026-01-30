@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Siete</string>
+    <string name="start">Desliza hacia arriba para comenzar (después de 5 seg. de pausa) …</string>
+    <string name="start2">5 segundos de pausa antes del primer ejercicio …</string>
+
+    //Menu Settings
+    <string name="action_settings">Ajustes | Ayuda | Acerca de</string>
+    <string name="action_license">Licencia</string>
+    <string name="action_help">Ayuda</string>
+    <string name="action_changelog">Registro de cambios</string>
+
+    <string name="pref_1">Acerca de la aplicación</string>
+    <string name="pref_2">Ajustes</string>
+
+    <string name="action_changelog_summary">Ver novedades …</string>
+    <string name="action_license_summary">La aplicación está licenciada bajo GPL3</string>
+    <string name="action_help_summary">Aprende sobre los gestos de deslizamiento …</string>
+
+    <string name="action_tts">TTS</string>
+    <string name="action_tts_summary">¿Quieres escuchar comandos de voz?</string>
+    <string name="action_beep">Silbato</string>
+    <string name="action_beep_summary">¿Quieres escuchar un silbato después de cada ejercicio?</string>
+    <string name="action_duration">Duración</string>
+    <string name="action_duration_summary">Establece la duración de un ejercicio.</string>
+
+    <string name="action_exercises">Ejercicios</string>
+
+    //Snackbar
+    <string name="sn_pause">Un breve descanso …</string>
+    <string name="sn_weiter">… ¡vamos a empezar de nuevo!</string>
+    <string name="end">¡Hecho!</string>
+    <string name="sn_first">Este es el primer ejercicio.</string>
+    <string name="sn_last">Este es el último ejercicio.</string>
+    <string name="sn_change" tools:keep="@string/sn_change">Por favor, cambia del lado derecho al izquierdo.</string>
+
+    //Titles
+    <string name="act">1. Ejercicio - Saltos de tijera</string>
+    <string name="act_2" tools:keep="@string/act_2">2. Ejercicio - Sentadilla en pared</string>
+    <string name="act_3" tools:keep="@string/act_3">3. Ejercicio - Flexiones</string>
+    <string name="act_4" tools:keep="@string/act_4">4. Ejercicio - Abdominales</string>
+    <string name="act_5" tools:keep="@string/act_5">5. Ejercicio - Subir a una silla</string>
+    <string name="act_6" tools:keep="@string/act_6">6. Ejercicio - Sentadilla</string>
+    <string name="act_7" tools:keep="@string/act_7">7. Ejercicio - Fondos de tríceps en silla</string>
+    <string name="act_8" tools:keep="@string/act_8">8. Ejercicio - Plancha</string>
+    <string name="act_9" tools:keep="@string/act_9">9. Ejercicio - Rodillas altas corriendo</string>
+    <string name="act_10" tools:keep="@string/act_10">10. Ejercicio - Zancada</string>
+    <string name="act_11" tools:keep="@string/act_11">11. Ejercicio - Flexión con rotación</string>
+    <string name="act_12" tools:keep="@string/act_12">12. Ejercicio - Plancha lateral derecha</string>
+    <string name="act_122">12. Ejercicio - Plancha lateral izquierda</string>
+
+    <string name="acte">1. Ejercicio</string>
+    <string name="act_2e" tools:keep="@string/act_2e">2. Ejercicio</string>
+    <string name="act_3e" tools:keep="@string/act_3e">3. Ejercicio</string>
+    <string name="act_4e" tools:keep="@string/act_4e">4. Ejercicio</string>
+    <string name="act_5e" tools:keep="@string/act_5e">5. Ejercicio</string>
+    <string name="act_6e" tools:keep="@string/act_6e">6. Ejercicio</string>
+    <string name="act_7e" tools:keep="@string/act_7e">7. Ejercicio</string>
+    <string name="act_8e" tools:keep="@string/act_8e">8. Ejercicio</string>
+    <string name="act_9e" tools:keep="@string/act_9e">9. Ejercicio</string>
+    <string name="act_10e" tools:keep="@string/act_10e">10. Ejercicio</string>
+    <string name="act_11e" tools:keep="@string/act_11e">11. Ejercicio</string>
+    <string name="act_12e" tools:keep="@string/act_12e">12. Ejercicio</string>
+
+    <string name="actee">Saltos de tijera</string>
+    <string name="act_2ee" tools:keep="@string/act_2ee">Sentadilla en pared</string>
+    <string name="act_3ee" tools:keep="@string/act_3ee">Flexiones</string>
+    <string name="act_4ee" tools:keep="@string/act_4ee">Abdominales</string>
+    <string name="act_5ee" tools:keep="@string/act_5ee">Subir a una silla</string>
+    <string name="act_6ee" tools:keep="@string/act_6ee">Sentadilla</string>
+    <string name="act_7ee" tools:keep="@string/act_7ee">Fondos de tríceps en silla</string>
+    <string name="act_8ee" tools:keep="@string/act_8ee">Plancha</string>
+    <string name="act_9ee" tools:keep="@string/act_9ee">Rodillas altas corriendo</string>
+    <string name="act_10ee" tools:keep="@string/act_10ee">Zancada</string>
+    <string name="act_11ee" tools:keep="@string/act_11ee">Flexión con rotación</string>
+    <string name="act_12ee" tools:keep="@string/act_12ee">Plancha lateral</string>
+
+    <string name="pau">Descanso - luego: Sentadilla en pared</string>
+    <string name="pau_2" tools:keep="@string/pau_2">Descanso - luego: Flexiones</string>
+    <string name="pau_3" tools:keep="@string/pau_3">Descanso - luego: Abdominales</string>
+    <string name="pau_4" tools:keep="@string/pau_4">Descanso - luego: Subir a una silla</string>
+    <string name="pau_5" tools:keep="@string/pau_5">Descanso - luego: Sentadilla</string>
+    <string name="pau_6" tools:keep="@string/pau_6">Descanso - luego: Fondos de tríceps en silla</string>
+    <string name="pau_7" tools:keep="@string/pau_7">Descanso - luego: Plancha</string>
+    <string name="pau_8" tools:keep="@string/pau_8">Descanso - luego: Rodillas altas corriendo</string>
+    <string name="pau_9" tools:keep="@string/pau_9">Descanso - luego: Zancada</string>
+    <string name="pau_10">Descanso - luego: Flexión con rotación</string>
+    <string name="pau_11" tools:keep="@string/pau_11">Descanso - luego: Plancha lateral derecha</string>
+    <string name="pau_112">Descanso - por favor cambia de lado</string>
+
+    //License Dialog
+    <string name="about_yes">OK</string>
+    <string name="about_title">Copyright © 2016  por Gaukler Faun</string>
+    <string name="about_text">
+        &lt;b>Colaboradores:&lt;/b>&lt;br>&lt;br>
+
+        &lt;i>Desarrollo&lt;/i>&lt;br>
+        Gaukler Faun https://github.com/scoute-dich&lt;br> &lt;br>
+
+        &lt;i>Traducciones&lt;/i>&lt;br>
+        Francés: jeberger https://github.com/jeberger&lt;br>
+        Japonés: naofum https://github.com/naofum&lt;br> &lt;br>
+
+        &lt;i>Pequeñas correcciones&lt;/i>&lt;br>
+        Mathias Lux https://github.com/dermotte&lt;br> &lt;br>
+
+        Este programa es software libre: puedes redistribuirlo y/o modificarlo
+        bajo los términos de la Licencia Pública General de GNU publicada por
+        la Fundación de Software Libre, ya sea la versión 3 de la Licencia o
+        (a tu elección) cualquier versión posterior.
+
+        Este programa se distribuye con la esperanza de que sea útil,
+        pero SIN NINGUNA GARANTÍA; sin siquiera la garantía implícita de
+        COMERCIABILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Consulta la
+        Licencia Pública General de GNU para más detalles.
+
+        Deberías haber recibido una copia de la Licencia Pública General de GNU
+        junto con este programa. Si no, visita http://www.gnu.org/licenses.&lt;br> &lt;br>
+
+        &lt;i>Las imágenes del entrenamiento se pueden encontrar en el blog de \"C. Gilbert\"
+        (http://almostfearless.com/the-21-minute-workout-or-7-minutes-if-youre-really-fit). Gracias a ella
+        por el permiso para usarlas en la aplicación.&lt;/i> &lt;br>
+
+        &lt;i>El silbato está disponible bajo la Licencia Creative Commons 0 de
+        http://freesound.org/people/MentalSanityOff/sounds/218318/ &lt;/i></string>
+
+    //Changelog Dialog
+    <string name="changelog_text">
+        &lt;i>Para más información sobre el proyecto y recursos utilizados visita el sitio del proyecto. Si quieres,
+        puedes donar allí a través de paypal:&lt;br>
+        https://github.com/scoute-dich/Sieben&lt;/i>&lt;br>&lt;br>
+
+        &lt;b>v 1.9:&lt;/b>&lt;br>
+        &#8226; Agregado soporte para idiomas adicionales &lt;br>
+        &#8226; Español, italiano y portugués &lt;br>&lt;br>
+
+        &lt;b>v 1.8:&lt;/b>&lt;br>
+        &#8226; versión de mantenimiento &lt;br>
+        &#8226; issue 18 corregido (gracias a rsiccho)&lt;br>
+        &#8226; soporte para Android N&lt;br>&lt;br>
+
+        &lt;b>v 1.7.5:&lt;/b>&lt;br>
+        &#8226; Corregidas algunas cadenas en alemán &lt;br>
+        &#8226; Agregada traducción al francés &lt;br>
+        &#8226; Agregado sonido de silbato en lugar de pitido &lt;br>&lt;br>
+
+        &lt;b>v 1.7.4:&lt;/b>&lt;br>
+        &#8226; Corrección de error: ejercicio 2&lt;br>&lt;br>
+
+        &lt;b>v 1.7.3:&lt;/b>&lt;br>
+        &#8226; Ajustes: duración del ejercicio&lt;br>
+        &#8226; actualización de gradle&lt;br>
+        &#8226; mostrar imagen del primer ejercicio elegido al iniciar&lt;br>
+        &#8226; correcciones de errores&lt;br>&lt;br>
+
+        &lt;b>v 1.7.2:&lt;/b>&lt;br>
+        &#8226; correcciones de errores&lt;br>&lt;br>
+
+        &lt;b>v 1.7 - 1.7.1:&lt;/b>&lt;br>
+        &#8226; opción para seleccionar ejercicios&lt;br>
+        &#8226; advertencias de lint corregidas&lt;br>&lt;br>
+
+        &lt;b>v 1.6 - 1.6.2:&lt;/b>&lt;br>
+        &#8226; enlace roto corregido&lt;br>
+        &#8226; botón fab eliminado&lt;br>
+        &#8226; ajustes de audio agregados&lt;br>
+        &#8226; último ejercicio dividido en dos partes&lt;br>
+        &#8226; descanso antes del primer ejercicio&lt;br>&lt;br>
+
+        &lt;b>v 1.5:&lt;/b>&lt;br>
+        &#8226; soporte de texto a voz&lt;br>
+        &#8226; soporte de pausa y reanudación de cuenta regresiva&lt;br>
+        &#8226; limpieza de código&lt;br>&lt;br>
+
+        &lt;b>v 1.4:&lt;/b>&lt;br>
+        &#8226; orientación de pantalla establecida a vertical&lt;br>
+        &#8226; enlace del proyecto corregido&lt;br>&lt;br>
+
+        &lt;b>v 1.3.1:&lt;/b>&lt;br>
+        &#8226; traducción al japonés agregada&lt;br>&lt;br>
+
+        &lt;b>v 1.3:&lt;/b>&lt;br>
+        &#8226; función de deslizamiento agregada (ver diálogo de ayuda)&lt;br>
+        &#8226; mantener pantalla despierta&lt;br>
+        &#8226; nuevos diálogos (ayuda/registro de cambios)&lt;br>&lt;br>
+
+        &lt;b>v 1.2:&lt;/b>&lt;br>
+        &#8226; idioma predeterminado cambiado a inglés&lt;br>&lt;br>
+
+        &lt;b>v 1.1:&lt;/b>&lt;br>
+        &#8226; mejor integración de snackbar&lt;br>&lt;br>
+
+        &lt;b>v 1.0:&lt;/b>&lt;br>
+        &#8226; primer lanzamiento
+    </string>
+
+    //Help Dialog
+    <string name="help_text">
+        &lt;i>Deslizar a la izquierda: &lt;/i>cambiar al siguiente ejercicio&lt;br>&lt;br>
+
+        &lt;i>Deslizar a la derecha: &lt;/i>cambiar al ejercicio anterior&lt;br>&lt;br>
+
+        &lt;i>Deslizar hacia abajo: &lt;/i>hacer una pausa&lt;br>&lt;br>
+
+        &lt;i>Deslizar hacia arriba: &lt;/i>reiniciar ejercicio actual
+    </string>
+
+
+    // Arrays
+    <string-array name="listArrayDuration">
+        <item>30 segundos</item>
+        <item>45 segundos</item>
+        <item>60 segundos</item>
+    </string-array>
+
+    <string-array name="listValuesDuration">
+        <item>30</item>
+        <item>44</item>
+        <item>60</item>
+    </string-array>
+
+</resources>
