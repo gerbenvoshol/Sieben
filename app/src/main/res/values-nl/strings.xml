@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Zeven</string>
+    <string name="start">Veeg omhoog om te beginnen (na 5 sec. pauze) …</string>
+    <string name="start2">5 seconden pauze voor de eerste oefening …</string>
+
+    //Menu Settings
+    <string name="action_settings">Instellingen | Help | Over</string>
+    <string name="action_license">Licentie</string>
+    <string name="action_help">Help</string>
+    <string name="action_changelog">Wijzigingslogboek</string>
+
+    <string name="pref_1">Over de app</string>
+    <string name="pref_2">Instellingen</string>
+
+    <string name="action_changelog_summary">Bekijk wat er nieuw is …</string>
+    <string name="action_license_summary">App is gelicenseerd onder GPL3</string>
+    <string name="action_help_summary">Leer over de veeggebaren …</string>
+
+    <string name="action_tts">TTS</string>
+    <string name="action_tts_summary">Wil je spraakopdrachten horen?</string>
+    <string name="action_beep">Fluitje</string>
+    <string name="action_beep_summary">Wil je een fluitje horen na elke oefening?</string>
+    <string name="action_duration">Duur</string>
+    <string name="action_duration_summary">Stel de duur van een oefening in.</string>
+
+    <string name="action_exercises">Oefeningen</string>
+
+    //Snackbar
+    <string name="sn_pause">Een korte pauze …</string>
+    <string name="sn_weiter">… laten we opnieuw beginnen!</string>
+    <string name="end">Klaar!</string>
+    <string name="sn_first">Dit is de eerste oefening.</string>
+    <string name="sn_last">Dit is de laatste oefening.</string>
+    <string name="sn_change" tools:keep="@string/sn_change">Wissel alstublieft van rechts naar links.</string>
+
+    //Titles
+    <string name="act">1. Oefening - Jumping jacks</string>
+    <string name="act_2" tools:keep="@string/act_2">2. Oefening - Muurzit</string>
+    <string name="act_3" tools:keep="@string/act_3">3. Oefening - Opdrukken</string>
+    <string name="act_4" tools:keep="@string/act_4">4. Oefening - Buikspier crunch</string>
+    <string name="act_5" tools:keep="@string/act_5">5. Oefening - Stap op stoel</string>
+    <string name="act_6" tools:keep="@string/act_6">6. Oefening - Squat</string>
+    <string name="act_7" tools:keep="@string/act_7">7. Oefening - Triceps dip op stoel</string>
+    <string name="act_8" tools:keep="@string/act_8">8. Oefening - Plank</string>
+    <string name="act_9" tools:keep="@string/act_9">9. Oefening - Hoge knieën rennen</string>
+    <string name="act_10" tools:keep="@string/act_10">10. Oefening - Uitval</string>
+    <string name="act_11" tools:keep="@string/act_11">11. Oefening - Opdrukken met rotatie</string>
+    <string name="act_12" tools:keep="@string/act_12">12. Oefening - Zijplank rechts</string>
+    <string name="act_122">12. Oefening - Zijplank links</string>
+
+    <string name="acte">1. Oefening</string>
+    <string name="act_2e" tools:keep="@string/act_2e">2. Oefening</string>
+    <string name="act_3e" tools:keep="@string/act_3e">3. Oefening</string>
+    <string name="act_4e" tools:keep="@string/act_4e">4. Oefening</string>
+    <string name="act_5e" tools:keep="@string/act_5e">5. Oefening</string>
+    <string name="act_6e" tools:keep="@string/act_6e">6. Oefening</string>
+    <string name="act_7e" tools:keep="@string/act_7e">7. Oefening</string>
+    <string name="act_8e" tools:keep="@string/act_8e">8. Oefening</string>
+    <string name="act_9e" tools:keep="@string/act_9e">9. Oefening</string>
+    <string name="act_10e" tools:keep="@string/act_10e">10. Oefening</string>
+    <string name="act_11e" tools:keep="@string/act_11e">11. Oefening</string>
+    <string name="act_12e" tools:keep="@string/act_12e">12. Oefening</string>
+
+    <string name="actee">Jumping jacks</string>
+    <string name="act_2ee" tools:keep="@string/act_2ee">Muurzit</string>
+    <string name="act_3ee" tools:keep="@string/act_3ee">Opdrukken</string>
+    <string name="act_4ee" tools:keep="@string/act_4ee">Buikspier crunch</string>
+    <string name="act_5ee" tools:keep="@string/act_5ee">Stap op stoel</string>
+    <string name="act_6ee" tools:keep="@string/act_6ee">Squat</string>
+    <string name="act_7ee" tools:keep="@string/act_7ee">Triceps dip op stoel</string>
+    <string name="act_8ee" tools:keep="@string/act_8ee">Plank</string>
+    <string name="act_9ee" tools:keep="@string/act_9ee">Hoge knieën rennen</string>
+    <string name="act_10ee" tools:keep="@string/act_10ee">Uitval</string>
+    <string name="act_11ee" tools:keep="@string/act_11ee">Opdrukken met rotatie</string>
+    <string name="act_12ee" tools:keep="@string/act_12ee">Zijplank</string>
+
+    <string name="pau">Pauze - dan: Muurzit</string>
+    <string name="pau_2" tools:keep="@string/pau_2">Pauze - dan: Opdrukken</string>
+    <string name="pau_3" tools:keep="@string/pau_3">Pauze - dan: Buikspier crunch</string>
+    <string name="pau_4" tools:keep="@string/pau_4">Pauze - dan: Stap op stoel</string>
+    <string name="pau_5" tools:keep="@string/pau_5">Pauze - dan: Squat</string>
+    <string name="pau_6" tools:keep="@string/pau_6">Pauze - dan: Triceps dip op stoel</string>
+    <string name="pau_7" tools:keep="@string/pau_7">Pauze - dan: Plank</string>
+    <string name="pau_8" tools:keep="@string/pau_8">Pauze - dan: Hoge knieën rennen</string>
+    <string name="pau_9" tools:keep="@string/pau_9">Pauze - dan: Uitval</string>
+    <string name="pau_10">Pauze - dan: Opdrukken met rotatie</string>
+    <string name="pau_11" tools:keep="@string/pau_11">Pauze - dan: Zijplank rechts</string>
+    <string name="pau_112">Pauze - wissel alstublieft van kant</string>
+
+    //License Dialog
+    <string name="about_yes">OK</string>
+    <string name="about_title">Copyright © 2016  door Gaukler Faun</string>
+    <string name="about_text">
+        &lt;b>Bijdragers:&lt;/b>&lt;br>&lt;br>
+
+        &lt;i>Ontwikkeling&lt;/i>&lt;br>
+        Gaukler Faun https://github.com/scoute-dich&lt;br> &lt;br>
+
+        &lt;i>Vertalingen&lt;/i>&lt;br>
+        Frans: jeberger https://github.com/jeberger&lt;br>
+        Japans: naofum https://github.com/naofum&lt;br> &lt;br>
+
+        &lt;i>Kleine correcties&lt;/i>&lt;br>
+        Mathias Lux https://github.com/dermotte&lt;br> &lt;br>
+
+        Dit programma is vrije software: je kunt het herdistribueren en/of wijzigen
+        onder de voorwaarden van de GNU General Public License zoals gepubliceerd door
+        de Free Software Foundation, ofwel versie 3 van de Licentie, of
+        (naar jouw keuze) elke latere versie.
+
+        Dit programma wordt gedistribueerd in de hoop dat het nuttig zal zijn,
+        maar ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie van
+        VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de
+        GNU General Public License voor meer details.
+
+        Je zou een kopie van de GNU General Public License moeten hebben ontvangen
+        samen met dit programma. Zo niet, zie http://www.gnu.org/licenses.&lt;br> &lt;br>
+
+        &lt;i>De afbeeldingen van de training zijn te vinden op de blog van \"C. Gilbert\"
+        (http://almostfearless.com/the-21-minute-workout-or-7-minutes-if-youre-really-fit). Dank aan haar
+        voor de toestemming om ze in de app te gebruiken.&lt;/i> &lt;br>
+
+        &lt;i>Het fluitje is beschikbaar onder de Creative Commons 0 Licentie van
+        http://freesound.org/people/MentalSanityOff/sounds/218318/ &lt;/i></string>
+
+    //Changelog Dialog
+    <string name="changelog_text">
+        &lt;i>Voor meer informatie over het project en gebruikte bronnen bezoek de projectsite. Als je wilt,
+        kun je daar doneren via paypal:&lt;br>
+        https://github.com/scoute-dich/Sieben&lt;/i>&lt;br>&lt;br>
+
+        &lt;b>v 1.9:&lt;/b>&lt;br>
+        &#8226; Nederlandse vertaling toegevoegd &lt;br>
+        &#8226; Russische vertaling toegevoegd &lt;br>
+        &#8226; Spaanse, Italiaanse en Portugese vertalingen &lt;br>&lt;br>
+
+        &lt;b>v 1.8:&lt;/b>&lt;br>
+        &#8226; onderhoudsrelease &lt;br>
+        &#8226; issue 18 opgelost (dank aan rsiccho)&lt;br>
+        &#8226; Android N ondersteuning&lt;br>&lt;br>
+
+        &lt;b>v 1.7.5:&lt;/b>&lt;br>
+        &#8226; Enkele Duitse strings gecorrigeerd &lt;br>
+        &#8226; Franse vertaling toegevoegd &lt;br>
+        &#8226; Fluitgeluid toegevoegd in plaats van piep &lt;br>&lt;br>
+
+        &lt;b>v 1.7.4:&lt;/b>&lt;br>
+        &#8226; Bugfix: oefening 2&lt;br>&lt;br>
+
+        &lt;b>v 1.7.3:&lt;/b>&lt;br>
+        &#8226; Instellingen: duur van oefening&lt;br>
+        &#8226; gradle update&lt;br>
+        &#8226; toon afbeelding van eerste gekozen oefening bij start&lt;br>
+        &#8226; bugfixes&lt;br>&lt;br>
+
+        &lt;b>v 1.7.2:&lt;/b>&lt;br>
+        &#8226; bugfixes&lt;br>&lt;br>
+
+        &lt;b>v 1.7 - 1.7.1:&lt;/b>&lt;br>
+        &#8226; optie om oefeningen te selecteren&lt;br>
+        &#8226; lint waarschuwingen opgelost&lt;br>&lt;br>
+
+        &lt;b>v 1.6 - 1.6.2:&lt;/b>&lt;br>
+        &#8226; gebroken link gerepareerd&lt;br>
+        &#8226; fab-knop verwijderd&lt;br>
+        &#8226; audio instellingen toegevoegd&lt;br>
+        &#8226; laatste oefening opgesplitst in twee delen&lt;br>
+        &#8226; pauze voor eerste oefening&lt;br>&lt;br>
+
+        &lt;b>v 1.5:&lt;/b>&lt;br>
+        &#8226; tekst-naar-spraak ondersteuning&lt;br>
+        &#8226; aftelling pauzeren en hervatten ondersteuning&lt;br>
+        &#8226; code opschoning&lt;br>&lt;br>
+
+        &lt;b>v 1.4:&lt;/b>&lt;br>
+        &#8226; schermoriëntatie ingesteld op portret&lt;br>
+        &#8226; projectlink gerepareerd&lt;br>&lt;br>
+
+        &lt;b>v 1.3.1:&lt;/b>&lt;br>
+        &#8226; Japanse vertaling toegevoegd&lt;br>&lt;br>
+
+        &lt;b>v 1.3:&lt;/b>&lt;br>
+        &#8226; veegfunctie toegevoegd (zie helpdialoog)&lt;br>
+        &#8226; scherm wakker houden&lt;br>
+        &#8226; nieuwe dialogen (help/wijzigingslogboek)&lt;br>&lt;br>
+
+        &lt;b>v 1.2:&lt;/b>&lt;br>
+        &#8226; standaardtaal gewijzigd naar Engels&lt;br>&lt;br>
+
+        &lt;b>v 1.1:&lt;/b>&lt;br>
+        &#8226; betere integratie van snackbar&lt;br>&lt;br>
+
+        &lt;b>v 1.0:&lt;/b>&lt;br>
+        &#8226; eerste release
+    </string>
+
+    //Help Dialog
+    <string name="help_text">
+        &lt;i>Veeg naar links: &lt;/i>ga naar volgende oefening&lt;br>&lt;br>
+
+        &lt;i>Veeg naar rechts: &lt;/i>ga naar vorige oefening&lt;br>&lt;br>
+
+        &lt;i>Veeg naar beneden: &lt;/i>neem een pauze&lt;br>&lt;br>
+
+        &lt;i>Veeg naar boven: &lt;/i>herstart huidige oefening
+    </string>
+
+
+    // Arrays
+    <string-array name="listArrayDuration">
+        <item>30 seconden</item>
+        <item>45 seconden</item>
+        <item>60 seconden</item>
+    </string-array>
+
+    <string-array name="listValuesDuration">
+        <item>30</item>
+        <item>44</item>
+        <item>60</item>
+    </string-array>
+
+
+    <!-- New strings from TeknoCepni v2.0-v2.3 -->
+    <string name="app_ok">OK</string>
+    <string name="app_no">Annuleren</string>
+    <string name="app_sec">seconden</string>
+    <string name="app_chosenTime">Gekozen duur:</string>
+    <string name="app_standardTime">(Standaard:</string>
+    <string name="app_con">Bevestiging</string>
+    <string name="app_con_message">Wil je echt resetten?</string>
+
+    <string name="stat_time">Totale tijd:</string>
+    <string name="stat_number">Aantal:</string>
+    <string name="stat_average">Gemiddelde:</string>
+
+    <string name="sort">Items sorteren</string>
+    <string name="sort_icon">op naam</string>
+    <string name="sort_number">op aantal</string>
+    <string name="sort_hms">op totale tijd</string>
+    <string name="sort_average">op gemiddelde</string>
+    <string name="sort_icon2">naam</string>
+    <string name="sort_number2">aantal</string>
+    <string name="sort_hms2">totale tijd (u:m:s)</string>
+    <string name="sort_average2">gemiddelde (m:s)</string>
+
+    <string name="intro1_title">Seven</string>
+    <string name="intro1_text">Bedankt voor het kiezen van "Seven". Het is open source en volledig gratis (als in vrijheid).</string>
+
+    <string name="intro2_title">Gebaren</string>
+    <string name="intro2_text">Veeg naar beneden op de afbeelding om een pauze te nemen, veeg naar boven om door te gaan met de training. Veeg naar rechts om naar de vorige oefening te gaan en naar links om de huidige over te slaan.</string>
+
+    <string name="intro3_title">Instellingen</string>
+    <string name="intro3_text">Er zijn enkele basisinstellingen voor de app (duur van oefeningen en pauzes, kies oefeningen). Je kunt ook een statistisch overzicht openen van uitgevoerde oefeningen. Nu, laten we beginnen ...</string>
+
+    <string name="action_reset">Duur resetten</string>
+
+    <string name="pref_3">Geavanceerd</string>
+    <string name="pref_4">Diversen</string>
+
+    <string name="action_durationEx">Duur per oefening</string>
+    <string name="action_durationEx_summary">Stel verschillende duur per oefening in.</string>
+
+    <string name="action_stat">Statistieken</string>
+    <string name="action_stat_summary">Toon informatie over uitgevoerde oefeningen, totale tijd en gemiddelde per oefening.</string>
+
+    <string name="action_endless">Eindeloos</string>
+    <string name="action_endless_summary">Start training opnieuw na de laatste oefening.</string>
+
+    <string name="action_duration2">Duur: Pauze</string>
+    <string name="action_exercises_summary">Kies de oefeningen die je wilt uitvoeren.</string>
+
+    <string name="about_settings">Over ... en andere dingen</string>
+    <string name="about_settings_text">Wijzigingslogboek, help, licentie, gebruikte bibliotheken en meer.</string>
+    <string name="about_title_dev">Ontwikkelaar</string>
+    <string name="about_title_ext">Bijdragers</string>
+    <string name="about_title_ext1">Franse vertaling</string>
+    <string name="about_title_ext2">Kleine correcties en fluitje</string>
+    <string name="about_title_ext3">Japanse vertaling</string>
+    <string name="about_title_ext4">Spaanse vertaling</string>
+    <string name="about_title_libs">Gebruikte bronnen</string>
+
+    <string name="about_intro">Introductie</string>
+    <string name="about_intro_summary">Toon het introductie scherm nog een keer.</string>
+    <string name="about_changelog">Wijzigingslogboek</string>
+    <string name="about_changelog_summary">Open Github-site en bekijk wat er nieuw is ... (internetverbinding vereist)</string>
+    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev_summary">Open mijn profiel op Github (internetverbinding vereist).</string>
+    <string name="about_donate">Doneren</string>
+    <string name="about_donate_summary">Als je de app leuk vindt, kun je me een donatie doen via Paypal (internetverbinding vereist).</string>
+    <string name="about_license">Licentie</string>
+    <string name="about_license_summary">De app is gelicenseerd onder GPL en is volledig open source en gratis (als in vrijheid).</string>
+    <string name="about_license_1_title">Trainingsafbeeldingen</string>
+    <string name="about_license_1">De afbeeldingen van de training zijn te vinden op de blog van "C. Gilbert". Dank aan haar voor de toestemming om ze in de app te gebruiken.</string>
+    <string name="about_license_2_title">Fluitje</string>
+    <string name="about_license_2">Het fluitje is beschikbaar onder de Creative Commons 0 Licentie.</string>
+    <string name="about_license_3">Gebruikt om het introductie scherm te bouwen.</string>
+    <string name="about_license_7">Gebruikt om het "Over" scherm te maken.</string>
+    <string name="about_license_8">De bron van bijna alle iconen.</string>
+
+</resources>

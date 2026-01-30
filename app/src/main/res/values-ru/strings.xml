@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Семь</string>
+    <string name="start">Проведите вверх, чтобы начать (после 5 сек. паузы) …</string>
+    <string name="start2">5 секунд паузы перед первым упражнением …</string>
+
+    //Menu Settings
+    <string name="action_settings">Настройки | Помощь | О программе</string>
+    <string name="action_license">Лицензия</string>
+    <string name="action_help">Помощь</string>
+    <string name="action_changelog">Список изменений</string>
+
+    <string name="pref_1">О приложении</string>
+    <string name="pref_2">Настройки</string>
+
+    <string name="action_changelog_summary">Посмотрите, что нового …</string>
+    <string name="action_license_summary">Приложение лицензировано под GPL3</string>
+    <string name="action_help_summary">Узнайте о жестах пролистывания …</string>
+
+    <string name="action_tts">TTS</string>
+    <string name="action_tts_summary">Хотите слышать голосовые команды?</string>
+    <string name="action_beep">Свисток</string>
+    <string name="action_beep_summary">Хотите слышать свисток после каждого упражнения?</string>
+    <string name="action_duration">Продолжительность</string>
+    <string name="action_duration_summary">Установите продолжительность упражнения.</string>
+
+    <string name="action_exercises">Упражнения</string>
+
+    //Snackbar
+    <string name="sn_pause">Короткая пауза …</string>
+    <string name="sn_weiter">… давайте начнем снова!</string>
+    <string name="end">Готово!</string>
+    <string name="sn_first">Это первое упражнение.</string>
+    <string name="sn_last">Это последнее упражнение.</string>
+    <string name="sn_change" tools:keep="@string/sn_change">Пожалуйста, смените с правой стороны на левую.</string>
+
+    //Titles
+    <string name="act">1. Упражнение - Прыжки с хлопками</string>
+    <string name="act_2" tools:keep="@string/act_2">2. Упражнение - Присед у стены</string>
+    <string name="act_3" tools:keep="@string/act_3">3. Упражнение - Отжимания</string>
+    <string name="act_4" tools:keep="@string/act_4">4. Упражнение - Скручивания на пресс</string>
+    <string name="act_5" tools:keep="@string/act_5">5. Упражнение - Подъем на стул</string>
+    <string name="act_6" tools:keep="@string/act_6">6. Упражнение - Приседания</string>
+    <string name="act_7" tools:keep="@string/act_7">7. Упражнение - Обратные отжимания на стуле</string>
+    <string name="act_8" tools:keep="@string/act_8">8. Упражнение - Планка</string>
+    <string name="act_9" tools:keep="@string/act_9">9. Упражнение - Бег с высоким подниманием колен</string>
+    <string name="act_10" tools:keep="@string/act_10">10. Упражнение - Выпады</string>
+    <string name="act_11" tools:keep="@string/act_11">11. Упражнение - Отжимания с вращением</string>
+    <string name="act_12" tools:keep="@string/act_12">12. Упражнение - Боковая планка справа</string>
+    <string name="act_122">12. Упражнение - Боковая планка слева</string>
+
+    <string name="acte">1. Упражнение</string>
+    <string name="act_2e" tools:keep="@string/act_2e">2. Упражнение</string>
+    <string name="act_3e" tools:keep="@string/act_3e">3. Упражнение</string>
+    <string name="act_4e" tools:keep="@string/act_4e">4. Упражнение</string>
+    <string name="act_5e" tools:keep="@string/act_5e">5. Упражнение</string>
+    <string name="act_6e" tools:keep="@string/act_6e">6. Упражнение</string>
+    <string name="act_7e" tools:keep="@string/act_7e">7. Упражнение</string>
+    <string name="act_8e" tools:keep="@string/act_8e">8. Упражнение</string>
+    <string name="act_9e" tools:keep="@string/act_9e">9. Упражнение</string>
+    <string name="act_10e" tools:keep="@string/act_10e">10. Упражнение</string>
+    <string name="act_11e" tools:keep="@string/act_11e">11. Упражнение</string>
+    <string name="act_12e" tools:keep="@string/act_12e">12. Упражнение</string>
+
+    <string name="actee">Прыжки с хлопками</string>
+    <string name="act_2ee" tools:keep="@string/act_2ee">Присед у стены</string>
+    <string name="act_3ee" tools:keep="@string/act_3ee">Отжимания</string>
+    <string name="act_4ee" tools:keep="@string/act_4ee">Скручивания на пресс</string>
+    <string name="act_5ee" tools:keep="@string/act_5ee">Подъем на стул</string>
+    <string name="act_6ee" tools:keep="@string/act_6ee">Приседания</string>
+    <string name="act_7ee" tools:keep="@string/act_7ee">Обратные отжимания на стуле</string>
+    <string name="act_8ee" tools:keep="@string/act_8ee">Планка</string>
+    <string name="act_9ee" tools:keep="@string/act_9ee">Бег с высоким подниманием колен</string>
+    <string name="act_10ee" tools:keep="@string/act_10ee">Выпады</string>
+    <string name="act_11ee" tools:keep="@string/act_11ee">Отжимания с вращением</string>
+    <string name="act_12ee" tools:keep="@string/act_12ee">Боковая планка</string>
+
+    <string name="pau">Пауза - затем: Присед у стены</string>
+    <string name="pau_2" tools:keep="@string/pau_2">Пауза - затем: Отжимания</string>
+    <string name="pau_3" tools:keep="@string/pau_3">Пауза - затем: Скручивания на пресс</string>
+    <string name="pau_4" tools:keep="@string/pau_4">Пауза - затем: Подъем на стул</string>
+    <string name="pau_5" tools:keep="@string/pau_5">Пауза - затем: Приседания</string>
+    <string name="pau_6" tools:keep="@string/pau_6">Пауза - затем: Обратные отжимания на стуле</string>
+    <string name="pau_7" tools:keep="@string/pau_7">Пауза - затем: Планка</string>
+    <string name="pau_8" tools:keep="@string/pau_8">Пауза - затем: Бег с высоким подниманием колен</string>
+    <string name="pau_9" tools:keep="@string/pau_9">Пауза - затем: Выпады</string>
+    <string name="pau_10">Пауза - затем: Отжимания с вращением</string>
+    <string name="pau_11" tools:keep="@string/pau_11">Пауза - затем: Боковая планка справа</string>
+    <string name="pau_112">Пауза - пожалуйста, смените сторону</string>
+
+    //License Dialog
+    <string name="about_yes">OK</string>
+    <string name="about_title">Copyright © 2016  Gaukler Faun</string>
+    <string name="about_text">
+        &lt;b>Участники:&lt;/b>&lt;br>&lt;br>
+
+        &lt;i>Разработка&lt;/i>&lt;br>
+        Gaukler Faun https://github.com/scoute-dich&lt;br> &lt;br>
+
+        &lt;i>Переводы&lt;/i>&lt;br>
+        Французский: jeberger https://github.com/jeberger&lt;br>
+        Японский: naofum https://github.com/naofum&lt;br> &lt;br>
+
+        &lt;i>Небольшие исправления&lt;/i>&lt;br>
+        Mathias Lux https://github.com/dermotte&lt;br> &lt;br>
+
+        Эта программа является свободным программным обеспечением: вы можете распространять
+        и/или изменять её в соответствии с условиями GNU General Public License,
+        опубликованной Free Software Foundation, либо версии 3 Лицензии, либо
+        (по вашему выбору) любой более поздней версии.
+
+        Эта программа распространяется в надежде, что она будет полезна,
+        но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемой гарантии
+        ТОВАРНОЙ ПРИГОДНОСТИ или ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННОЙ ЦЕЛИ. Подробнее
+        см. в GNU General Public License.
+
+        Вы должны были получить копию GNU General Public License
+        вместе с этой программой. Если нет, см. http://www.gnu.org/licenses.&lt;br> &lt;br>
+
+        &lt;i>Изображения упражнений можно найти в блоге \"C. Gilbert\"
+        (http://almostfearless.com/the-21-minute-workout-or-7-minutes-if-youre-really-fit). Спасибо ей
+        за разрешение использовать их в приложении.&lt;/i> &lt;br>
+
+        &lt;i>Свисток доступен по лицензии Creative Commons 0 с
+        http://freesound.org/people/MentalSanityOff/sounds/218318/ &lt;/i></string>
+
+    //Changelog Dialog
+    <string name="changelog_text">
+        &lt;i>Для получения дополнительной информации о проекте и используемых ресурсах посетите сайт проекта. Если хотите,
+        вы можете сделать пожертвование через paypal:&lt;br>
+        https://github.com/scoute-dich/Sieben&lt;/i>&lt;br>&lt;br>
+
+        &lt;b>v 1.9:&lt;/b>&lt;br>
+        &#8226; Добавлен голландский перевод &lt;br>
+        &#8226; Добавлен русский перевод &lt;br>
+        &#8226; Испанский, итальянский и португальский переводы &lt;br>&lt;br>
+
+        &lt;b>v 1.8:&lt;/b>&lt;br>
+        &#8226; релиз обслуживания &lt;br>
+        &#8226; исправлена проблема 18 (спасибо rsiccho)&lt;br>
+        &#8226; поддержка Android N&lt;br>&lt;br>
+
+        &lt;b>v 1.7.5:&lt;/b>&lt;br>
+        &#8226; Исправлены некоторые немецкие строки &lt;br>
+        &#8226; Добавлен французский перевод &lt;br>
+        &#8226; Добавлен звук свистка вместо гудка &lt;br>&lt;br>
+
+        &lt;b>v 1.7.4:&lt;/b>&lt;br>
+        &#8226; Исправление ошибки: упражнение 2&lt;br>&lt;br>
+
+        &lt;b>v 1.7.3:&lt;/b>&lt;br>
+        &#8226; Настройки: продолжительность упражнения&lt;br>
+        &#8226; обновление gradle&lt;br>
+        &#8226; показ изображения первого выбранного упражнения при запуске&lt;br>
+        &#8226; исправления ошибок&lt;br>&lt;br>
+
+        &lt;b>v 1.7.2:&lt;/b>&lt;br>
+        &#8226; исправления ошибок&lt;br>&lt;br>
+
+        &lt;b>v 1.7 - 1.7.1:&lt;/b>&lt;br>
+        &#8226; опция выбора упражнений&lt;br>
+        &#8226; исправлены предупреждения lint&lt;br>&lt;br>
+
+        &lt;b>v 1.6 - 1.6.2:&lt;/b>&lt;br>
+        &#8226; исправлена битая ссылка&lt;br>
+        &#8226; удалена кнопка fab&lt;br>
+        &#8226; добавлены настройки аудио&lt;br>
+        &#8226; последнее упражнение разделено на две части&lt;br>
+        &#8226; пауза перед первым упражнением&lt;br>&lt;br>
+
+        &lt;b>v 1.5:&lt;/b>&lt;br>
+        &#8226; поддержка text to speech&lt;br>
+        &#8226; поддержка паузы и возобновления обратного отсчета&lt;br>
+        &#8226; очистка кода&lt;br>&lt;br>
+
+        &lt;b>v 1.4:&lt;/b>&lt;br>
+        &#8226; ориентация экрана установлена на портретную&lt;br>
+        &#8226; исправлена ссылка на проект&lt;br>&lt;br>
+
+        &lt;b>v 1.3.1:&lt;/b>&lt;br>
+        &#8226; добавлен японский перевод&lt;br>&lt;br>
+
+        &lt;b>v 1.3:&lt;/b>&lt;br>
+        &#8226; добавлена функция пролистывания (см. диалог помощи)&lt;br>
+        &#8226; экран не выключается&lt;br>
+        &#8226; новые диалоги (помощь/список изменений)&lt;br>&lt;br>
+
+        &lt;b>v 1.2:&lt;/b>&lt;br>
+        &#8226; язык по умолчанию изменен на английский&lt;br>&lt;br>
+
+        &lt;b>v 1.1:&lt;/b>&lt;br>
+        &#8226; улучшенная интеграция snackbar&lt;br>&lt;br>
+
+        &lt;b>v 1.0:&lt;/b>&lt;br>
+        &#8226; первый релиз
+    </string>
+
+    //Help Dialog
+    <string name="help_text">
+        &lt;i>Проведите влево: &lt;/i>переключиться на следующее упражнение&lt;br>&lt;br>
+
+        &lt;i>Проведите вправо: &lt;/i>переключиться на предыдущее упражнение&lt;br>&lt;br>
+
+        &lt;i>Проведите вниз: &lt;/i>сделать паузу&lt;br>&lt;br>
+
+        &lt;i>Проведите вверх: &lt;/i>перезапустить текущее упражнение
+    </string>
+
+
+    // Arrays
+    <string-array name="listArrayDuration">
+        <item>30 секунд</item>
+        <item>45 секунд</item>
+        <item>60 секунд</item>
+    </string-array>
+
+    <string-array name="listValuesDuration">
+        <item>30</item>
+        <item>44</item>
+        <item>60</item>
+    </string-array>
+
+
+    <!-- New strings from TeknoCepni v2.0-v2.3 -->
+    <string name="app_ok">OK</string>
+    <string name="app_no">Отмена</string>
+    <string name="app_sec">секунды</string>
+    <string name="app_chosenTime">Выбранная продолжительность:</string>
+    <string name="app_standardTime">(Стандарт:</string>
+    <string name="app_con">Подтверждение</string>
+    <string name="app_con_message">Вы действительно хотите сбросить?</string>
+
+    <string name="stat_time">Общее время:</string>
+    <string name="stat_number">Количество:</string>
+    <string name="stat_average">Среднее:</string>
+
+    <string name="sort">Сортировать записи</string>
+    <string name="sort_icon">по имени</string>
+    <string name="sort_number">по количеству</string>
+    <string name="sort_hms">по общему времени</string>
+    <string name="sort_average">по среднему</string>
+    <string name="sort_icon2">имя</string>
+    <string name="sort_number2">количество</string>
+    <string name="sort_hms2">общее время (ч:м:с)</string>
+    <string name="sort_average2">среднее (м:с)</string>
+
+    <string name="intro1_title">Seven</string>
+    <string name="intro1_text">Спасибо, что выбрали "Seven". Это open source и полностью бесплатное приложение (как в свободе).</string>
+
+    <string name="intro2_title">Жесты</string>
+    <string name="intro2_text">Проведите вниз по изображению, чтобы сделать паузу, проведите вверх, чтобы продолжить тренировку. Проведите вправо, чтобы перейти к предыдущему упражнению, и влево, чтобы пропустить текущее.</string>
+
+    <string name="intro3_title">Настройки</string>
+    <string name="intro3_text">Есть несколько базовых настроек для приложения (продолжительность упражнений и пауз, выбор упражнений). Вы также можете открыть статистический обзор выполненных упражнений. Теперь давайте начнем ...</string>
+
+    <string name="action_reset">Сбросить продолжительность</string>
+
+    <string name="pref_3">Расширенные</string>
+    <string name="pref_4">Разное</string>
+
+    <string name="action_durationEx">Продолжительность на упражнение</string>
+    <string name="action_durationEx_summary">Установить разную продолжительность для каждого упражнения.</string>
+
+    <string name="action_stat">Статистика</string>
+    <string name="action_stat_summary">Показать информацию о выполненных упражнениях, общем времени и среднем на упражнение.</string>
+
+    <string name="action_endless">Бесконечно</string>
+    <string name="action_endless_summary">Начать тренировку снова после последнего упражнения.</string>
+
+    <string name="action_duration2">Продолжительность: Пауза</string>
+    <string name="action_exercises_summary">Выберите упражнения, которые хотите выполнить.</string>
+
+    <string name="about_settings">О программе ... и прочее</string>
+    <string name="about_settings_text">Список изменений, помощь, лицензия, используемые библиотеки и многое другое.</string>
+    <string name="about_title_dev">Разработчик</string>
+    <string name="about_title_ext">Участники</string>
+    <string name="about_title_ext1">Перевод на французский</string>
+    <string name="about_title_ext2">Небольшие исправления и свисток</string>
+    <string name="about_title_ext3">Перевод на японский</string>
+    <string name="about_title_ext4">Перевод на испанский</string>
+    <string name="about_title_libs">Используемые ресурсы</string>
+
+    <string name="about_intro">Введение</string>
+    <string name="about_intro_summary">Показать вводный экран еще раз.</string>
+    <string name="about_changelog">Список изменений</string>
+    <string name="about_changelog_summary">Открыть сайт Github и посмотреть, что нового ... (требуется подключение к интернету)</string>
+    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev_summary">Открыть мой профиль на Github (требуется подключение к интернету).</string>
+    <string name="about_donate">Пожертвовать</string>
+    <string name="about_donate_summary">Если вам нравится приложение, вы можете сделать мне пожертвование через Paypal (требуется подключение к интернету).</string>
+    <string name="about_license">Лицензия</string>
+    <string name="about_license_summary">Приложение лицензировано под GPL и полностью открыто и бесплатно (как в свободе).</string>
+    <string name="about_license_1_title">Изображения тренировки</string>
+    <string name="about_license_1">Изображения тренировки можно найти в блоге "C. Gilbert". Спасибо ей за разрешение использовать их в приложении.</string>
+    <string name="about_license_2_title">Свисток</string>
+    <string name="about_license_2">Свисток доступен по лицензии Creative Commons 0.</string>
+    <string name="about_license_3">Используется для создания вводного экрана.</string>
+    <string name="about_license_7">Используется для создания экрана "О программе".</string>
+    <string name="about_license_8">Источник почти всех иконок.</string>
+
+</resources>

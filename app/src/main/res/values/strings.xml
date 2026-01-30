@@ -3,28 +3,70 @@
     <string name="app_name">Seven</string>
     <string name="start">Swipe up to begin (after 5 sec. break) …</string>
     <string name="start2">5 seconds break before first exercise …</string>
+    <string name="app_ok">OK</string>
+    <string name="app_no">Cancel</string>
+    <string name="app_sec">seconds</string>
+    <string name="app_chosenTime">Chosen duration:</string>
+    <string name="app_standardTime">(Standard:</string>
+    <string name="app_con">Confirmation</string>
+    <string name="app_con_message">Do you really want to reset?</string>
+
+    //Statistics
+    <string name="stat_time">Overall time:</string>
+    <string name="stat_number">Count:</string>
+    <string name="stat_average">Average:</string>
+
+    <string name="sort">Sort entries</string>
+    <string name="sort_icon">by name</string>
+    <string name="sort_number">by count</string>
+    <string name="sort_hms">by overall time</string>
+    <string name="sort_average">by average</string>
+    <string name="sort_icon2">name</string>
+    <string name="sort_number2">count</string>
+    <string name="sort_hms2">overall time (h:m:s)</string>
+    <string name="sort_average2">average (m:s)</string>
+
+    //Intro
+
+    <string name="intro1_title">Seven</string>
+    <string name="intro1_text">Thanks for choosing \"Seven\". It\'s open source and complete free (as in freedom).</string>
+
+    <string name="intro2_title">Gestures</string>
+    <string name="intro2_text">Swipe down on the image to make a break, swipe up to continue with the workout. Swipe right to
+    reach the previous exercise and left to skip the current one.</string>
+
+    <string name="intro3_title">Settings</string>
+    <string name="intro3_text">There are same basic settings for the app (duration of exercises and breaks, choose exercises). You
+        can also open a statistic overview over done exercises. Now, let\'s start …</string>
+
+
 
     //Menu Settings
     <string name="action_settings">Settings | Help | About</string>
-    <string name="action_license">License</string>
-    <string name="action_help">Help</string>
-    <string name="action_changelog">Changelog</string>
+    <string name="action_reset">Reset durations</string>
 
-    <string name="pref_1">About the app</string>
     <string name="pref_2">Settings</string>
+    <string name="pref_3">Advanced</string>
+    <string name="pref_4">Miscellaneous</string>
 
-    <string name="action_changelog_summary">See what\'s new …</string>
-    <string name="action_license_summary">App is licensed under GPL3</string>
-    <string name="action_help_summary">Learn about the swipe gestures …</string>
+    <string name="action_durationEx">Duration per exercise</string>
+    <string name="action_durationEx_summary">Set different duration per exercise.</string>
+
+    <string name="action_stat">Statistics</string>
+    <string name="action_stat_summary">Show some information about performed exercises, total time and average per exercise.</string>
+
+    <string name="action_endless">Endless</string>
+    <string name="action_endless_summary">Start workout again after last exercise.</string>
 
     <string name="action_tts">TTS</string>
     <string name="action_tts_summary">Do you want to hear voice commands?</string>
     <string name="action_beep">Whistle</string>
     <string name="action_beep_summary">Do you want to hear a whistle after each exercise?</string>
-    <string name="action_duration">Duration</string>
-    <string name="action_duration_summary">Set the duration for an exercise.</string>
-
+    <string name="action_duration">Duration: Workout</string>
+    <string name="action_duration2">Duration: Break</string>
     <string name="action_exercises">Exercises</string>
+    <string name="action_exercises_summary">Choose the exercises you want to perform.</string>
+
 
     //Snackbar
     <string name="sn_pause">A short Break …</string>
@@ -89,20 +131,9 @@
     <string name="pau_112">Break - please change sides</string>
 
     //License Dialog
-    <string name="about_yes">OK</string>
     <string name="about_title">Copyright © 2016  by Gaukler Faun</string>
     <string name="about_text">
-        &lt;b>Contributors:&lt;/b>&lt;br>&lt;br>
-
-        &lt;i>Development&lt;/i>&lt;br>
-        Gaukler Faun https://github.com/scoute-dich&lt;br> &lt;br>
-
-        &lt;i>Translations&lt;/i>&lt;br>
-        French: jeberger https://github.com/jeberger&lt;br>
-        Japanese: naofum https://github.com/naofum&lt;br> &lt;br>
-
-        &lt;i>Small fixes&lt;/i>&lt;br>
-        Mathias Lux https://github.com/dermotte&lt;br> &lt;br>
+        For more information visit the project site on github: https://github.com/scoute-dich/Sieben&lt;br>&lt;br>
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
@@ -115,104 +146,43 @@
         GNU General Public License for more details.
 
         You should have received a copy of the GNU General Public License
-        along with this program.  If not, see http://www.gnu.org/licenses.&lt;br> &lt;br>
+        along with this program.  If not, see http://www.gnu.org/licenses.</string>
 
-        &lt;i>The pictures from the workout can be found on the Blog of \"C. Gilbert\"
-        (http://almostfearless.com/the-21-minute-workout-or-7-minutes-if-youre-really-fit). Thanks to her
-        for the permission to use them in the app.&lt;/i> &lt;br>
+    // About
 
-        &lt;i>The whistle is available under the Creative Commons 0 License from
-        http://freesound.org/people/MentalSanityOff/sounds/218318/ &lt;/i></string>
+    <string name="about_settings">About … and other things</string>
+    <string name="about_settings_text">Changelog, help, license, used libraries and more.</string>
 
-    //Changelog Dialog
-    <string name="changelog_text">
-        &lt;i>For more information about the project and used resources visit the project site. If you want,
-        you can donate there to me via paypal:&lt;br>
-        https://github.com/scoute-dich/Sieben&lt;/i>&lt;br>&lt;br>
+    <string name="about_title_dev">Developer</string>
+    <string name="about_title_libs">Used resources</string>
+    <string name="about_title_ext">Contributors</string>
+    <string name="about_title_ext1">French translation</string>
+    <string name="about_title_ext2">Small fixes and whistle</string>
+    <string name="about_title_ext3">Japanese translation</string>
+    <string name="about_title_ext4">Spanish translation</string>
 
-        &lt;b>v 1.8:&lt;/b>&lt;br>
-        &#8226; maintenance release &lt;br>
-        &#8226; issue 18 fixed (thanks to rsiccho)&lt;br>
-        &#8226; Android N support&lt;br>&lt;br>
+    <string name="about_changelog">Changelog</string>
+    <string name="about_changelog_summary">Open Github site and see what\'s new … (needs internet connection)</string>
 
-        &lt;b>v 1.7.5:&lt;/b>&lt;br>
-        &#8226; Fixed some German strings &lt;br>
-        &#8226; Added French translation &lt;br>
-        &#8226; Added whistle sound instead of beep &lt;br>&lt;br>
+    <string name="about_license">License</string>
+    <string name="about_license_summary">The app is licensed under GPL and completely open source and free (as in freedom).</string>
 
-        &lt;b>v 1.7.4:&lt;/b>&lt;br>
-        &#8226; Bug fix: exercise 2&lt;br>&lt;br>
+    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev_summary">Open my profile on Github (needs internet connection).</string>
 
-        &lt;b>v 1.7.3:&lt;/b>&lt;br>
-        &#8226; Settings: duration of exercise&lt;br>
-        &#8226; gradle update&lt;br>
-        &#8226; show picture of first chosen exercise on start&lt;br>
-        &#8226; bug fixes&lt;br>&lt;br>
+    <string name="about_intro">Intro</string>
+    <string name="about_intro_summary">Show the intro screen one more time.</string>
 
-        &lt;b>v 1.7.2:&lt;/b>&lt;br>
-        &#8226; bug fixes&lt;br>&lt;br>
+    <string name="about_donate">Donate</string>
+    <string name="about_donate_summary">If you like the app, you can donate to me via Paypal (needs internet connection).</string>
 
-        &lt;b>v 1.7 - 1.7.1:&lt;/b>&lt;br>
-        &#8226; option to select exercises&lt;br>
-        &#8226; fixed lint warnings&lt;br>&lt;br>
-
-        &lt;b>v 1.6 - 1.6.2:&lt;/b>&lt;br>
-        &#8226; fixed broken link&lt;br>
-        &#8226; removed fab-button&lt;br>
-        &#8226; added audio settings&lt;br>
-        &#8226; split last exercise in two parts&lt;br>
-        &#8226; break before first exercise&lt;br>&lt;br>
-
-        &lt;b>v 1.5:&lt;/b>&lt;br>
-        &#8226; text to speech support&lt;br>
-        &#8226; countdown pause and resume support&lt;br>
-        &#8226; code clean up&lt;br>&lt;br>
-
-        &lt;b>v 1.4:&lt;/b>&lt;br>
-        &#8226; set screen orientation to portrait&lt;br>
-        &#8226; fixed project-link&lt;br>&lt;br>
-
-        &lt;b>v 1.3.1:&lt;/b>&lt;br>
-        &#8226; added Japanese translation&lt;br>&lt;br>
-
-        &lt;b>v 1.3:&lt;/b>&lt;br>
-        &#8226; added swipe function (see help dialog)&lt;br>
-        &#8226; keep screen awake&lt;br>
-        &#8226; new dialogs (help/changelog)&lt;br>&lt;br>
-
-        &lt;b>v 1.2:&lt;/b>&lt;br>
-        &#8226; changed default language to english&lt;br>&lt;br>
-
-        &lt;b>v 1.1:&lt;/b>&lt;br>
-        &#8226; better integration of snackbar&lt;br>&lt;br>
-
-        &lt;b>v 1.0:&lt;/b>&lt;br>
-        &#8226; first release
-    </string>
-
-    //Help Dialog
-    <string name="help_text">
-        &lt;i>Swipe on left: &lt;/i>switch to next exercise&lt;br>&lt;br>
-
-        &lt;i>Swipe on right: &lt;/i>switch to previous exercise&lt;br>&lt;br>
-
-        &lt;i>Swipe on bottom: &lt;/i>make a break&lt;br>&lt;br>
-
-        &lt;i>Swipe on top: &lt;/i>restart actual exercise
-    </string>
-
-
-    // Arrays
-    <string-array name="listArrayDuration">
-        <item>30 seconds</item>
-        <item>45 seconds</item>
-        <item>60 seconds</item>
-    </string-array>
-
-    <string-array name="listValuesDuration">
-        <item>30</item>
-        <item>44</item>
-        <item>60</item>
-    </string-array>
+    <string name="about_license_1_title">Workout images</string>
+    <string name="about_license_2_title">Whistle</string>
+    <string name="about_license_1">The pictures from the workout can be found on the Blog of \"C. Gilbert\". Thanks to her
+        for the permission to use them in the app.</string>
+    <string name="about_license_2">The whistle is available under the Creative Commons 0 License.</string>
+    <string name="about_license_3">Used to build the intro screen.</string>
+    <string name="about_license_7">Used to create the \"About screen\".</string>
+    <string name="about_license_8">The source of nearly all icons.</string>
 
 </resources>

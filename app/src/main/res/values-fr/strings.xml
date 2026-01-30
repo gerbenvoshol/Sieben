@@ -1,37 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Seven</string>
-    <string name="start">Glissez vers le haut pour démarrer (après 5 secondes de pause)…</string>
+    <string name="start">Faîtes glisser vers le haut pour démarrer (après 5 secondes de pause)…</string>
     <string name="start2">5 secondes de pause avant le premier exercice…</string>
+    <string name="app_ok">OK</string>
+    <string name="app_no">Annuler</string>
+    <string name="app_sec">secondes</string>
+    <string name="app_chosenTime">Durée choisie :</string>
+    <string name="app_standardTime">(Par défaut :</string>
+    <string name="app_con">Confirmation</string>
+    <string name="app_con_message">Voulez vous vraiment réinitialiser ?</string>
+
+    //Statistics
+    <string name="stat_time">Durée totale :</string>
+    <string name="stat_number">Nombre :</string>
+    <string name="stat_average">Moyenne :</string>
+
+    <string name="sort">Trier</string>
+    <string name="sort_icon">par nom</string>
+    <string name="sort_number">par nombre</string>
+    <string name="sort_hms">par durée totale</string>
+    <string name="sort_average">par moyenne</string>
+    <string name="sort_icon2">nom</string>
+    <string name="sort_number2">nombre</string>
+    <string name="sort_hms2">durée totale (h:m:s)</string>
+    <string name="sort_average2">moyenne (m:s)</string>
+
+    //Intro
+    <string name="intro1_title">Seven</string>
+    <string name="intro1_text">Merci d\'avoir choisi \"Seven\", une application libre (comme dans liberté)</string>
+
+    <string name="intro2_title">Gestes</string>
+    <string name="intro2_text">Faîtes glisser vers le bas pour faire une pause, vers le haut pour poursuivre l\'entraînement. Faîtes glisser vers la droite pour accéder à l\'exercice précédent et vers la gauche pour passer l\'exercice en cours.</string>
+
+    <string name="intro3_title">Réglages</string>
+    <string name="intro3_text">Quelques réglages pour l\'application (durée des exercices et des pauses…). Vous pouvez accéder à un aperçu statistique des exercices réalisés. Allons-y…</string>
 
     //Menu Settings
-    <string name="action_settings">Réglages | Aide | À propos</string>
-    <string name="action_license">Licence</string>
-    <string name="action_help">Aide</string>
-    <string name="action_changelog">Nouveautés</string>
+    <string name="action_settings">Réglages</string>
+    <string name="action_reset">Réinitialiser les durées</string>
 
-    <string name="pref_1">À propos</string>
     <string name="pref_2">Réglages</string>
+    <string name="pref_3">Avancés</string>
+    <string name="pref_4">Divers</string>
 
-    <string name="action_changelog_summary">Voir les nouveautés…</string>
-    <string name="action_license_summary">L\'application est distribuée selon les termes de la GPL3</string>
-    <string name="action_help_summary">Aide sur les gestes glissés …</string>
+    <string name="action_durationEx">Durée par exercice</string>
+    <string name="action_durationEx_summary">Définir une durée différente pour chaque exercice.</string>
+
+    <string name="action_stat">Statistiques</string>
+    <string name="action_stat_summary">Voir quelques informations sur les exercices pratiqués, le temps total et moyen par exercice.</string>
+
+    <string name="action_endless">Entraînement sans fin</string>
+    <string name="action_endless_summary">Recommencer l\'entraînement après le dernier exercice.</string>
 
     <string name="action_tts">Synthèse vocale</string>
     <string name="action_tts_summary">Voulez-vous entendre des ordres par oral ?</string>
     <string name="action_beep">Bip</string>
     <string name="action_beep_summary">Voulez-vous entendre un signal sonore après chaque exercice ?</string>
-    <string name="action_duration">Durée</string>
-    <string name="action_duration_summary">Choisissez la durée des exercices</string>
+    <string name="action_duration">Durée : Exercice</string>
+    <string name="action_duration2">Durée : Pause</string>
 
     <string name="action_exercises">Exercices</string>
+    <string name="action_exercises_summary">Choisissez les exercices que vous souhaitez pratiquer.</string>
 
     //Snackbar
-    <string name="sn_pause">Courte pause …</string>
-    <string name="sn_weiter">… recommençons !</string>
-    <string name="end">Terminé !</string>
-    <string name="sn_first">Déjà au premier exercice.</string>
-    <string name="sn_last">Déjà au dernier exercice.</string>
+    <string name="sn_pause">Une courte pause …</string>
+    <string name="sn_weiter">… Recommençons !</string>
+    <string name="end">C\'est terminé !</string>
+    <string name="sn_first">Vous êtes déjà au premier exercice</string>
+    <string name="sn_last">Vous êtes déjà au dernier exercice</string>
     <string name="sn_change" tools:keep="@string/sn_change">Merci de changer de côté.</string>
 
     //Titles
@@ -75,34 +112,24 @@
     <string name="act_11ee" tools:keep="@string/act_11ee">Pompes tournées</string>
     <string name="act_12ee" tools:keep="@string/act_12ee">Gainage</string>
 
-    <string name="pau">Pause - puis: Chaise contre le mur</string>
-    <string name="pau_2" tools:keep="@string/pau_2">Pause - puis: Pompes"</string>
-    <string name="pau_3" tools:keep="@string/pau_3">Pause - puis: Abdominaux</string>
-    <string name="pau_4" tools:keep="@string/pau_4">Pause - puis: Monter et descendre d\'une chaise</string>
-    <string name="pau_5" tools:keep="@string/pau_5">Pause - puis: Flexions</string>
-    <string name="pau_6" tools:keep="@string/pau_6">Pause - puis: Triceps sur une chaise"</string>
-    <string name="pau_7" tools:keep="@string/pau_7">Pause - puis: Planche</string>
-    <string name="pau_8" tools:keep="@string/pau_8">Pause - puis: Courir en levant les genoux</string>
-    <string name="pau_9" tools:keep="@string/pau_9">Pause - puis: Fentes</string>
-    <string name="pau_10">Pause - puis: Pompes tournées</string>
-    <string name="pau_11" tools:keep="@string/pau_11">Pause - puis: Gainage à droite</string>
+    <string name="pau">Pause - puis : Chaise contre le mur</string>
+    <string name="pau_2" tools:keep="@string/pau_2">Pause - puis : Pompes"</string>
+    <string name="pau_3" tools:keep="@string/pau_3">Pause - puis : Abdominaux</string>
+    <string name="pau_4" tools:keep="@string/pau_4">Pause - puis : Monter et descendre d\'une chaise</string>
+    <string name="pau_5" tools:keep="@string/pau_5">Pause - puis : Flexions</string>
+    <string name="pau_6" tools:keep="@string/pau_6">Pause - puis : Triceps sur une chaise"</string>
+    <string name="pau_7" tools:keep="@string/pau_7">Pause - puis : Planche</string>
+    <string name="pau_8" tools:keep="@string/pau_8">Pause - puis : Courir en levant les genoux</string>
+    <string name="pau_9" tools:keep="@string/pau_9">Pause - puis : Fentes</string>
+    <string name="pau_10">Pause - puis : Pompes tournées</string>
+    <string name="pau_11" tools:keep="@string/pau_11">Pause - puis : Gainage à droite</string>
     <string name="pau_112">Pause - changez de côté</string>
 
     //License Dialog
-    <string name="about_yes">OK</string>
-    <string name="about_title">Copyright © 2016  by Gaukler Faun</string>
+
+    <string name="about_title">Copyright © 2016 Gaukler Faun</string>
     <string name="about_text">
-        &lt;b>Contributors:&lt;/b>&lt;br>&lt;br>
-
-        &lt;i>Development&lt;/i>&lt;br>
-        Gaukler Faun https://github.com/scoute-dich&lt;br> &lt;br>
-
-        &lt;i>Translations&lt;/i>&lt;br>
-        French: jeberger https://github.com/jeberger&lt;br>
-        Japanese: naofum https://github.com/naofum&lt;br> &lt;br>
-
-        &lt;i>Small fixes&lt;/i>&lt;br>
-        Mathias Lux https://github.com/dermotte&lt;br> &lt;br>
+        Pour plus d\'informations, visitez le site github du projet : https://github.com/scoute-dich/Sieben&lt;br>&lt;br>
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
@@ -115,96 +142,42 @@
         GNU General Public License for more details.
 
         You should have received a copy of the GNU General Public License
-        along with this program.  If not, see http://www.gnu.org/licenses.&lt;br> &lt;br>
+        along with this program.  If not, see http://www.gnu.org/licenses.</string>
 
-        &lt;i>The pictures from the workout can be found on the Blog of \"C. Gilbert\"
-        (http://almostfearless.com/the-21-minute-workout-or-7-minutes-if-youre-really-fit). Thanks to her
-        for the permission to use them in the app.&lt;/i></string>
+    // About
 
-    //Changelog Dialog
-    <string name="changelog_text">
-        &lt;i>For more information about the project and used resources visit the project site. If you want,
-        you can donate there to me via paypal:&lt;br>
-        https://github.com/scoute-dich/Sieben&lt;/i>&lt;br>&lt;br>
+    <string name="about_settings">À propos de cette application</string>
+    <string name="about_settings_text">Notes de révisions, aide, licence, bibliothèques utilisées et plus encore</string>
 
-        &lt;b>v 1.7.5:&lt;/b>&lt;br>
-        &#8226; Fixed some German strings &lt;br>
-        &#8226; Added French translation &lt;br>
-        &#8226; Added whistle sound instead of beep &lt;br>&lt;br>
+    <string name="about_title_dev">Développeur</string>
+    <string name="about_title_libs">Ressources utilisées</string>
+    <string name="about_title_ext">Contributeurs</string>
+    <string name="about_title_ext1">Traduction française</string>
+    <string name="about_title_ext2">Corrections mineures et sifflet</string>
+    <string name="about_title_ext3">Traduction japonaise</string>
+    <string name="about_title_ext4">Traduction espagnole</string>
 
-        &lt;b>v 1.7.4:&lt;/b>&lt;br>
-        &#8226; Bug fix: exercise 2&lt;br>&lt;br>
+    <string name="about_changelog">Changelog</string>
+    <string name="about_changelog_summary">Accédez aux notes de révions disponibles sur Github (connexion internet requise)</string>
 
-        &lt;b>v 1.7.3:&lt;/b>&lt;br>
-        &#8226; Settings: duration of exercise&lt;br>
-        &#8226; gradle update&lt;br>
-        &#8226; show picture of first chosen exercise on start&lt;br>
-        &#8226; bug fixes&lt;br>&lt;br>
+    <string name="about_license">Licence</string>
+    <string name="about_license_summary">Cette application est distribuée sous licence GPL. Son code est libre (comme dans liberté)</string>
 
-        &lt;b>v 1.7.2:&lt;/b>&lt;br>
-        &#8226; bug fixes&lt;br>&lt;br>
+    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev_summary">Visitez mon profil sur Github (connexion internet requise)</string>
 
-        &lt;b>v 1.7 - 1.7.1:&lt;/b>&lt;br>
-        &#8226; option to select exercises&lt;br>
-        &#8226; fixed lint warnings&lt;br>&lt;br>
+    <string name="about_intro">Introduction</string>
+    <string name="about_intro_summary">Visualisez à nouveau l\'introduction</string>
 
-        &lt;b>v 1.6 - 1.6.2:&lt;/b>&lt;br>
-        &#8226; fixed broken link&lt;br>
-        &#8226; removed fab-button&lt;br>
-        &#8226; added audio settings&lt;br>
-        &#8226; split last exercise in two parts&lt;br>
-        &#8226; break before first exercise&lt;br>&lt;br>
+    <string name="about_donate">Don</string>
+    <string name="about_donate_summary">Si vous aimez cette application, vous pouvez me faire un don par Paypal (connexion internet requise)</string>
 
-        &lt;b>v 1.5:&lt;/b>&lt;br>
-        &#8226; text to speech support&lt;br>
-        &#8226; countdown pause and resume support&lt;br>
-        &#8226; code clean up&lt;br>&lt;br>
-
-        &lt;b>v 1.4:&lt;/b>&lt;br>
-        &#8226; set screen orientation to portrait&lt;br>
-        &#8226; fixed project-link&lt;br>&lt;br>
-
-        &lt;b>v 1.3.1:&lt;/b>&lt;br>
-        &#8226; added Japanese translation&lt;br>&lt;br>
-
-        &lt;b>v 1.3:&lt;/b>&lt;br>
-        &#8226; added swipe function (see help dialog)&lt;br>
-        &#8226; keep screen awake&lt;br>
-        &#8226; new dialogs (help/changelog)&lt;br>&lt;br>
-
-        &lt;b>v 1.2:&lt;/b>&lt;br>
-        &#8226; changed default language to english&lt;br>&lt;br>
-
-        &lt;b>v 1.1:&lt;/b>&lt;br>
-        &#8226; better integration of snackbar&lt;br>&lt;br>
-
-        &lt;b>v 1.0:&lt;/b>&lt;br>
-        &#8226; first release
-    </string>
-
-    //Help Dialog
-    <string name="help_text">
-        &lt;i>Glissement à gauche : &lt;/i>exercice suivant&lt;br>&lt;br>
-
-        &lt;i>Glissement à droite : &lt;/i>exercice précédent&lt;br>&lt;br>
-
-        &lt;i>Glissement vers le bas : &lt;/i>pause&lt;br>&lt;br>
-
-        &lt;i>Glissement vers le haut : &lt;/i>redémarrer l\'exercice courant
-    </string>
-
-
-    // Arrays
-    <string-array name="listArrayDuration">
-        <item>30 secondes</item>
-        <item>45 secondes</item>
-        <item>60 secondes</item>
-    </string-array>
-
-    <string-array name="listValuesDuration">
-        <item>30</item>
-        <item>45</item>
-        <item>60</item>
-    </string-array>
+    <string name="about_license_1_title">Images de l\'entraînement</string>
+    <string name="about_license_2_title">Sifflet</string>
+    <string name="about_license_1">Les images de l\'entraînement peuvent être trouvées sur le blog de \"C. Gilbert\". Merci à elle de me permettre de les utiliser dans l\'application</string>
+    <string name="about_license_2">Le sifflet est disponible sous licence Creative Commons CC0</string>
+    <string name="about_license_3">Utilisée pour créer la séquence d\'introduction</string>
+    <string name="about_license_7">Utilisée pour l\'écran \"À propos\"</string>
+    <string name="about_license_8">La source de la plupart des icônes</string>
 
 </resources>

@@ -3,12 +3,24 @@
 [![Donate](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NP6TGYDYP9SHY)
 
 # Sieben
-A small android application to perform the seven minutes workout. It's very basic:
+A small android application to perform the seven minutes workout.
 
-- you can perform the workout
-- pause and resume an exercise
-- jump to previous or next exercise
-- english and german
+### Features:
+- Perform the 7-minute workout with 12 exercises
+- Pause and resume exercises
+- Navigate between exercises with swipe gestures
+- Adjustable duration for workouts and breaks
+- Per-exercise duration settings (advanced)
+- Statistics tracking of performed exercises
+- Intro screen for first-time users
+- About screen with app information
+- Endless workout mode
+- Text-to-speech (TTS) voice commands
+- Whistle sound after each exercise
+- Workout preview pictures in settings
+
+### Languages:
+English, German, French, Japanese, Spanish, Italian, Portuguese, Dutch, Russian
 
 ### Links:
 - Download [APK](https://github.com/scoute-dich/Sieben/releases)
