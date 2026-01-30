@@ -2,6 +2,9 @@
 - Added Spanish translation
 - Added Italian translation
 - Added Portuguese translation
+- Added Dutch translation
+- Added Russian translation
+- Created automated build script (build-apk.sh)
 - Updated documentation
 - Version bump to 1.9
 
