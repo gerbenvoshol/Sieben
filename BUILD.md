@@ -35,10 +35,10 @@ For more options, run: `./build-apk.sh --help`
 
 ### Prerequisites
 
-- Android SDK with API level 25 or higher
-- Build Tools version 25.0.0 or higher  
-- Gradle 2.2.2 or higher
-- Java Development Kit (JDK) 8 or higher
+- Android SDK with API level 34 or higher (compileSdk)
+- Gradle 7.5 or higher (automatically managed by wrapper)
+- Java Development Kit (JDK) 8 or higher (JDK 11 or 17 recommended)
+- Android Gradle Plugin 7.4.2 (configured in build.gradle)
 
 ### Using Gradle (Recommended)
 
