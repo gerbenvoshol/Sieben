@@ -264,8 +264,8 @@
     <string name="action_stat">Statistieken</string>
     <string name="action_stat_summary">Toon informatie over uitgevoerde oefeningen, totale tijd en gemiddelde per oefening.</string>
 
-    <string name="action_endless">Eindeloos</string>
-    <string name="action_endless_summary">Start training opnieuw na de laatste oefening.</string>
+    <string name="action_repetitions">Trainingsherhalingen</string>
+    <string name="action_repetitions_summary">Aantal keren om de training te herhalen (0 = eindeloos).</string>
 
     <string name="action_duration2">Duur: Pauze</string>
     <string name="action_exercises_summary">Kies de oefeningen die je wilt uitvoeren.</string>

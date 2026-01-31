@@ -50,8 +50,8 @@
     <string name="action_stat">Statistiques</string>
     <string name="action_stat_summary">Voir quelques informations sur les exercices pratiqués, le temps total et moyen par exercice.</string>
 
-    <string name="action_endless">Entraînement sans fin</string>
-    <string name="action_endless_summary">Recommencer l\'entraînement après le dernier exercice.</string>
+    <string name="action_repetitions">Répétitions d\'entraînement</string>
+    <string name="action_repetitions_summary">Nombre de répétitions de l\'entraînement (0 = sans fin).</string>
 
     <string name="action_tts">Synthèse vocale</string>
     <string name="action_tts_summary">Voulez-vous entendre des ordres par oral ?</string>

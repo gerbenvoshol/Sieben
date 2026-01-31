@@ -52,8 +52,8 @@
     <string name="action_durationEx">Dauer pro Übung</string>
     <string name="action_durationEx_summary">Stelle eine unterschiedliche Dauer pro Übung ein.</string>
 
-    <string name="action_endless">Endlostraining</string>
-    <string name="action_endless_summary">Workout nach der letzten Übung noch einmal starten.</string>
+    <string name="action_repetitions">Workout-Wiederholungen</string>
+    <string name="action_repetitions_summary">Anzahl der Workout-Wiederholungen (0 = endlos).</string>
 
     <string name="action_stat">Statistik</string>
     <string name="action_stat_summary">Ein paar Informationen über die Anzahl der gemachten Übungen und die Gesamtzeit sowie die

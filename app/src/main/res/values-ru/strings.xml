@@ -264,8 +264,8 @@
     <string name="action_stat">Статистика</string>
     <string name="action_stat_summary">Показать информацию о выполненных упражнениях, общем времени и среднем на упражнение.</string>
 
-    <string name="action_endless">Бесконечно</string>
-    <string name="action_endless_summary">Начать тренировку снова после последнего упражнения.</string>
+    <string name="action_repetitions">Повторения тренировки</string>
+    <string name="action_repetitions_summary">Количество повторений тренировки (0 = бесконечно).</string>
 
     <string name="action_duration2">Продолжительность: Пауза</string>
     <string name="action_exercises_summary">Выберите упражнения, которые хотите выполнить.</string>
