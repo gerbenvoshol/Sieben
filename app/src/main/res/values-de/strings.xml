@@ -132,7 +132,7 @@
     <string name="act_12ee" tools:keep="@string/act_12ee">Seitstütz</string>
 
     //License Dialog
-    <string name="about_title">Copyright © 2016  by Gaukler Faun</string>
+    <string name="about_title">Copyright © 2016 by Gaukler Faun&lt;br>Copyright © 2016 by Gerben Voshol</string>
     <string name="about_text">
         Besuche für mehr Informationen die Projektseite auf Github: https://github.com/gerbenvoshol/Sieben&lt;br>&lt;br>
 
@@ -169,7 +169,7 @@
     <string name="about_license_summary">Die App steht unter der GPL Lizenz und ist komplett frei (wie in Freiheit). Der Quellcode kann
         eingesehen werden.</string>
 
-    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev">Gerben Voshol</string>
     <string name="about_dev_summary">Öffne mein Github Profil (braucht eine Internetverbindung).</string>
 
     <string name="about_intro">Einführung</string>

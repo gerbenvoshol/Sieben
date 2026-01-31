@@ -131,19 +131,19 @@
     <string name="pau_112">Break - please change sides</string>
 
     //License Dialog
-    <string name="about_title">Copyright © 2016  by Gaukler Faun</string>
+    <string name="about_title">Copyright © 2016 by Gaukler Faun&lt;br>Copyright © 2016 by Gerben Voshol</string>
     <string name="about_text">
         For more information visit the project site on github: https://github.com/gerbenvoshol/Sieben&lt;br>&lt;br>
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
         the Free Software Foundation, either version 3 of the License, or
-        (at your option) any later version.
+        (at your option) any later version.&lt;br>&lt;br>
 
         This program is distributed in the hope that it will be useful,
         but WITHOUT ANY WARRANTY; without even the implied warranty of
         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-        GNU General Public License for more details.
+        GNU General Public License for more details.&lt;br>&lt;br>
 
         You should have received a copy of the GNU General Public License
         along with this program.  If not, see http://www.gnu.org/licenses.</string>
@@ -167,7 +167,7 @@
     <string name="about_license">License</string>
     <string name="about_license_summary">The app is licensed under GPL and completely open source and free (as in freedom).</string>
 
-    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev">Gerben Voshol</string>
     <string name="about_dev_summary">Open my profile on Github (needs internet connection).</string>
 
     <string name="about_intro">Intro</string>

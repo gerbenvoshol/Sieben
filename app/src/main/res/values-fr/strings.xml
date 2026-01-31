@@ -127,7 +127,7 @@
 
     //License Dialog
 
-    <string name="about_title">Copyright © 2016 Gaukler Faun</string>
+    <string name="about_title">Copyright © 2016 by Gaukler Faun&lt;br>Copyright © 2016 by Gerben Voshol</string>
     <string name="about_text">
         Pour plus d\'informations, visitez le site github du projet : https://github.com/gerbenvoshol/Sieben&lt;br>&lt;br>
 
@@ -163,7 +163,7 @@
     <string name="about_license">Licence</string>
     <string name="about_license_summary">Cette application est distribuée sous licence GPL. Son code est libre (comme dans liberté)</string>
 
-    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev">Gerben Voshol</string>
     <string name="about_dev_summary">Visitez mon profil sur Github (connexion internet requise)</string>
 
     <string name="about_intro">Introduction</string>

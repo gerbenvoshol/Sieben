@@ -90,12 +90,12 @@
 
     //License Dialog
     <string name="about_yes">OK</string>
-    <string name="about_title">Copyright © 2016  di Gaukler Faun</string>
+    <string name="about_title">Copyright © 2016 by Gaukler Faun&lt;br>Copyright © 2016 by Gerben Voshol</string>
     <string name="about_text">
         &lt;b>Collaboratori:&lt;/b>&lt;br>&lt;br>
 
         &lt;i>Sviluppo&lt;/i>&lt;br>
-        Gaukler Faun https://github.com/gerbenvoshol&lt;br> &lt;br>
+        Gerben Voshol https://github.com/gerbenvoshol&lt;br> &lt;br>
 
         &lt;i>Traduzioni&lt;/i>&lt;br>
         Francese: jeberger https://github.com/jeberger&lt;br>
@@ -283,7 +283,7 @@
     <string name="about_intro_summary">Mostra di nuovo la schermata introduttiva.</string>
     <string name="about_changelog">Registro delle modifiche</string>
     <string name="about_changelog_summary">Apri il sito Github e scopri le novità ... (richiede connessione internet)</string>
-    <string name="about_dev">Gaukler Faun</string>
+    <string name="about_dev">Gerben Voshol</string>
     <string name="about_dev_summary">Apri il mio profilo su Github (richiede connessione internet).</string>
     <string name="about_donate">Dona</string>
     <string name="about_donate_summary">Se ti piace l\'app, puoi farmi una donazione tramite Paypal (richiede connessione internet).</string>

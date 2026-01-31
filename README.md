@@ -1,9 +1,13 @@
-[![F-Droid](https://f-droid.org/wiki/images/0/06/F-Droid-button_get-it-on.png)](https://f-droid.org/repository/browse/?fdfilter=baumann&fdid=de.baumann.sieben)
-
-[![Donate](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NP6TGYDYP9SHY)
-
-# Sieben
+# Sieben a.k.a. Seven
 A small android application to perform the seven minutes workout.
+
+## Project History & Maintenance
+
+Originally written by **Gaukler Faun**. I had this app installed on my old phone, but after a recent upgrade I could no longer find it. Luckily, a few forks had been created before the original author and repository disappeared.
+
+This version is based on those forks and has been updated to work with recent Android SDK versions, with assistance from **GitHub Copilot**. The goal of this repository is to keep the app functional and available for modern Android devices while preserving the original concept and functionality.
+
+Please note that this repository is **not actively maintained**. I do not plan to regularly add features or provide ongoing support. That said, feel free to submit issues or pull requests—contributions are welcome—but responses and merges may be infrequent.
 
 ### Features:
 - Perform the 7-minute workout with 12 exercises

@@ -37,7 +37,6 @@ class About_content {
                 .build());
 
         try {
-
             appCardBuilder.addItem(ConvenienceBuilder.createVersionActionItem(c,
                     ContextCompat.getDrawable(c, R.drawable.earth2),
                     "Version",
@@ -109,15 +108,8 @@ class About_content {
         authorCardBuilder.addItem(new MaterialAboutActionItem.Builder()
                 .text(R.string.about_dev)
                 .subText(R.string.about_dev_summary)
-                .icon(R.drawable.gaukler_faun)
+                .icon(R.drawable.github_circle)
                 .setOnClickListener(ConvenienceBuilder.createWebViewDialogOnClickAction(c, c.getString(R.string.about_dev), "https://github.com/gerbenvoshol/", true, false))
-                .build());
-
-        authorCardBuilder.addItem(new MaterialAboutActionItem.Builder()
-                .text(R.string.about_donate)
-                .subText(R.string.about_donate_summary)
-                .icon(R.drawable.coin)
-                .setOnClickListener(ConvenienceBuilder.createWebsiteOnClickAction(c, Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NP6TGYDYP9SHY")))
                 .build());
 
         MaterialAboutCard.Builder authorCardBuilder2 = new MaterialAboutCard.Builder();
