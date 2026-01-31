@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:title="@string/act"
+        android:icon="@drawable/a01b"
+        android:key="act1"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_2"
+        android:icon="@drawable/a02b"
+        android:key="act2"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_3"
+        android:icon="@drawable/a03b"
+        android:key="act3"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_4"
+        android:icon="@drawable/a04b"
+        android:key="act4"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_5"
+        android:icon="@drawable/a05b"
+        android:key="act5"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_6"
+        android:icon="@drawable/a06b"
+        android:key="act6"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_7"
+        android:icon="@drawable/a07b"
+        android:key="act7"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_8"
+        android:icon="@drawable/a08b"
+        android:key="act8"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_9"
+        android:icon="@drawable/a09b"
+        android:key="act9"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_10"
+        android:icon="@drawable/a10b"
+        android:key="act10"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_11"
+        android:icon="@drawable/a11b"
+        android:key="act11"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:title="@string/act_12"
+        android:icon="@drawable/a12b"
+        android:key="act12"
+        android:defaultValue="true" />
+
+</PreferenceScreen>
