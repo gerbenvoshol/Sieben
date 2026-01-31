@@ -143,9 +143,55 @@ For automated migration, you can use:
 ./gradlew build
 ```
 
+## Gradle 9.0 Compatibility Updates (2026)
+
+### Additional Deprecated Features Fixed
+
+To ensure compatibility with Gradle 9.0, the following deprecated features were updated:
+
+#### 1. Replaced `lintOptions` with `lint`
+**File:** `app/build.gradle`
+
+- **Before:** `lintOptions { ... }`
+- **After:** `lint { ... }`
+- **Reasoning:** The `lintOptions` DSL was deprecated in AGP 7.0 and replaced with `lint` for consistency and future compatibility.
+
+#### 2. Migrated Repository Declarations to `settings.gradle`
+**Files:** `build.gradle`, `settings.gradle`
+
+- **Before:** Repository declarations in `allprojects` block in `build.gradle`
+- **After:** Repository declarations moved to `dependencyResolutionManagement` in `settings.gradle`
+- **Reasoning:** The `allprojects` block for repository configuration is deprecated in Gradle 7+ and will be removed in Gradle 9.0. The modern approach uses `dependencyResolutionManagement` in `settings.gradle` with `FAIL_ON_PROJECT_REPOS` mode to centralize repository management and improve build performance.
+
+**Changes in `settings.gradle`:**
+```gradle
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri('https://jitpack.io') }
+    }
+}
+```
+
+**Removed from `build.gradle`:**
+```gradle
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = 'https://jitpack.io' }
+    }
+}
+```
+
+These updates ensure the project is ready for Gradle 9.0 while maintaining compatibility with Gradle 7.6.4.
+
 ## References
 
 - [Android Gradle Plugin Release Notes](https://developer.android.com/studio/releases/gradle-plugin)
 - [Gradle Release Notes](https://docs.gradle.org/current/release-notes.html)
 - [AGP/Gradle Compatibility Matrix](https://developer.android.com/studio/releases/gradle-plugin#updating-gradle)
 - [Migrating to Android Plugin for Gradle 7.0](https://developer.android.com/studio/releases/gradle-plugin#7-0-0)
+- [Gradle 9.0 Deprecations](https://docs.gradle.org/current/userguide/upgrading_version_8.html)
