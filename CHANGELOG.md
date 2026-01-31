@@ -1,3 +1,10 @@
+### v 2.4 (Unreleased)
+- upgraded: Gradle build system from 4.10.3 to 7.6.4
+- upgraded: Android Gradle Plugin from 2.3.0 to 7.4.2
+- upgraded: Target SDK from 25 (Android 7.1) to 34 (Android 14)
+- fixed: DefaultDomainObjectSet compatibility issue
+- updated: Build dependencies to modern syntax (implementation/testImplementation)
+
 ### v 2.3
 - updated: French translation
 - updated: contributors list
