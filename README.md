@@ -18,7 +18,7 @@ Please note that this repository is **not actively maintained**. I do not plan t
 - Statistics tracking of performed exercises
 - Intro screen for first-time users
 - About screen with app information
-- Endless workout mode
+- Configurable workout repetitions (set 1-99 times or endless)
 - Text-to-speech (TTS) voice commands
 - Whistle sound after each exercise
 - Workout preview pictures in settings

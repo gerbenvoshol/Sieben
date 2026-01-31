@@ -41,12 +41,13 @@
     <PreferenceCategory
         android:title="@string/pref_3">
 
-        <CheckBoxPreference
-            android:title="@string/action_endless"
+        <EditTextPreference
+            android:title="@string/action_repetitions"
             android:icon="@drawable/repeat"
-            android:summary="@string/action_endless_summary"
-            android:key="endless"
-            android:defaultValue="false" />
+            android:summary="@string/action_repetitions_summary"
+            android:key="repetitions"
+            android:defaultValue="1"
+            android:inputType="number" />
 
         <Preference
             android:title="@string/action_durationEx"

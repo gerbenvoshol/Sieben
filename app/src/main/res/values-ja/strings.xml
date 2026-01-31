@@ -113,8 +113,8 @@
     <string name="action_stat">Statistics</string>
     <string name="action_stat_summary">Show some information about performed exercises, total time and average per exercise.</string>
 
-    <string name="action_endless">Endless</string>
-    <string name="action_endless_summary">Start workout again after last exercise.</string>
+    <string name="action_repetitions">ワークアウトの繰り返し</string>
+    <string name="action_repetitions_summary">ワークアウトを繰り返す回数（0 = 無限）。</string>
 
     <string name="action_reset">Reset durations</string>
 

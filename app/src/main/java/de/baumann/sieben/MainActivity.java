@@ -70,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
         PreferenceManager.setDefaultValues(this, R.xml.user_settings_exercises, false);
         sharedPref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
 
+        // Reset repetition counter when activity is created (new workout session)
+        if (savedInstanceState == null) {
+            sharedPref.edit().putInt("current_repetition", 0).apply();
+        }
+
         boolean show = sharedPref.getBoolean("intro_notShow", true);
 
         if (show){
@@ -271,6 +276,9 @@ public class MainActivity extends AppCompatActivity {
 
         if ("endless_workout".equals(action)) {
             start();
+        } else {
+            // Reset repetition counter when starting a new workout from beginning
+            sharedPref.edit().putInt("current_repetition", 0).apply();
         }
     }
 

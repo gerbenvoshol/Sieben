@@ -263,8 +263,8 @@
     <string name="action_stat">Statistiche</string>
     <string name="action_stat_summary">Mostra informazioni sugli esercizi eseguiti, tempo totale e media per esercizio.</string>
 
-    <string name="action_endless">Infinito</string>
-    <string name="action_endless_summary">Ricomincia l\'allenamento dopo l\'ultimo esercizio.</string>
+    <string name="action_repetitions">Ripetizioni allenamento</string>
+    <string name="action_repetitions_summary">Numero di volte per ripetere l\'allenamento (0 = infinito).</string>
 
     <string name="action_duration2">Durata: Pausa</string>
     <string name="action_exercises_summary">Scegli gli esercizi che vuoi eseguire.</string>

@@ -53,8 +53,8 @@
     <string name="action_stat">Estadísticas</string>
     <string name="action_stat_summary">Mostrar información sobre ejercicios realizados, tiempo total y promedio por ejercicio.</string>
 
-    <string name="action_endless">Sin fin</string>
-    <string name="action_endless_summary">Empezar de nuevo el entrenamiento tras el último ejercicio.</string>
+    <string name="action_repetitions">Repeticiones de entrenamiento</string>
+    <string name="action_repetitions_summary">Número de veces para repetir el entrenamiento (0 = sin fin).</string>
 
     <string name="action_tts">TTS</string>
     <string name="action_tts_summary">¿Quiere oír comandos de voz?</string>
