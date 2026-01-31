@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     // namespace directive replaces manifest package for AGP 7.0+
-    namespace 'de.baumann.sieben'
+    namespace = 'de.baumann.sieben'
     // Updated from 25 to 34 (Android 14)
     compileSdk 34
 
@@ -17,14 +17,14 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     buildFeatures {
         buildConfig = true
     }
     lint {
-        checkReleaseBuilds false
+        checkReleaseBuilds = false
         disable 'MissingTranslation'
     }
     compileOptions {
