@@ -304,7 +304,14 @@ public class MainActivity122 extends AppCompatActivity {
         }
 
         // Get the number of repetitions configured (0 = endless)
-        int targetRepetitions = Integer.parseInt(sharedPref.getString("repetitions", "1"));
+        int targetRepetitions;
+        try {
+            targetRepetitions = Integer.parseInt(sharedPref.getString("repetitions", "1"));
+        } catch (NumberFormatException e) {
+            // Default to 1 repetition if invalid input
+            targetRepetitions = 1;
+        }
+        
         int currentRepetition = sharedPref.getInt("current_repetition", 0);
         
         // Increment current repetition count
@@ -313,14 +320,14 @@ public class MainActivity122 extends AppCompatActivity {
         // Check if we should repeat the workout
         boolean shouldRepeat = (targetRepetitions == 0) || (currentRepetition < targetRepetitions);
         
+        if (sharedPref.getBoolean ("tts", false)){
+            String text = getResources().getString(R.string.end);
+            ttsManager.initQueue(text);
+        }
+        
         if (shouldRepeat) {
             // Store the current repetition count
             sharedPref.edit().putInt("current_repetition", currentRepetition).apply();
-            
-            if (sharedPref.getBoolean ("tts", false)){
-                String text = getResources().getString(R.string.end);
-                ttsManager.initQueue(text);
-            }
             
             Intent intent_in = new Intent(MainActivity122.this, MainActivity.class);
             intent_in.setAction("endless_workout");
@@ -330,11 +337,6 @@ public class MainActivity122 extends AppCompatActivity {
         } else {
             // Reset repetition counter for next workout
             sharedPref.edit().putInt("current_repetition", 0).apply();
-            
-            if (sharedPref.getBoolean ("tts", false)){
-                String text = getResources().getString(R.string.end);
-                ttsManager.initQueue(text);
-            }
             
             textView.setText(R.string.end);
         }

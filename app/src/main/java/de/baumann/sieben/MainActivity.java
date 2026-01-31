@@ -275,10 +275,8 @@ public class MainActivity extends AppCompatActivity {
         String action = intent.getAction();
 
         if ("endless_workout".equals(action)) {
+            // Continue with the next repetition of the workout
             start();
-        } else {
-            // Reset repetition counter when starting a new workout from beginning
-            sharedPref.edit().putInt("current_repetition", 0).apply();
         }
     }
 
