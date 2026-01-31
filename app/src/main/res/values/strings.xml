@@ -56,7 +56,7 @@
     <string name="action_stat_summary">Show some information about performed exercises, total time and average per exercise.</string>
 
     <string name="action_repetitions">Workout Repetitions</string>
-    <parameter name="action_repetitions_summary">Number of times to repeat the workout (0 = endless).
+    <string name="action_repetitions_summary">Number of times to repeat the workout (0 = endless).</string>
 
     <string name="action_tts">TTS</string>
     <string name="action_tts_summary">Do you want to hear voice commands?</string>
