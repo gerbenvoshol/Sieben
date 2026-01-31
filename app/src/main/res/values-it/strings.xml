@@ -247,10 +247,10 @@
     <string name="intro1_text">Grazie per aver scelto "Seven". È open source e completamente gratuito (come in libertà).</string>
 
     <string name="intro2_title">Gesti</string>
-    <string name="intro2_text">Scorri verso il basso sull'immagine per fare una pausa, scorri verso l'alto per continuare l'allenamento. Scorri a destra per raggiungere l'esercizio precedente e a sinistra per saltare quello attuale.</string>
+    <string name="intro2_text">Scorri verso il basso sull\'immagine per fare una pausa, scorri verso l\'alto per continuare l\'allenamento. Scorri a destra per raggiungere l\'esercizio precedente e a sinistra per saltare quello attuale.</string>
 
     <string name="intro3_title">Impostazioni</string>
-    <string name="intro3_text">Ci sono alcune impostazioni di base per l'app (durata di esercizi e pause, scelta esercizi). Puoi anche aprire una panoramica statistica degli esercizi eseguiti. Ora, iniziamo ...</string>
+    <string name="intro3_text">Ci sono alcune impostazioni di base per l\'app (durata di esercizi e pause, scelta esercizi). Puoi anche aprire una panoramica statistica degli esercizi eseguiti. Ora, iniziamo ...</string>
 
     <string name="action_reset">Ripristina durate</string>
 
@@ -264,7 +264,7 @@
     <string name="action_stat_summary">Mostra informazioni sugli esercizi eseguiti, tempo totale e media per esercizio.</string>
 
     <string name="action_endless">Infinito</string>
-    <string name="action_endless_summary">Ricomincia l'allenamento dopo l'ultimo esercizio.</string>
+    <string name="action_endless_summary">Ricomincia l\'allenamento dopo l\'ultimo esercizio.</string>
 
     <string name="action_duration2">Durata: Pausa</string>
     <string name="action_exercises_summary">Scegli gli esercizi che vuoi eseguire.</string>
@@ -286,11 +286,11 @@
     <string name="about_dev">Gaukler Faun</string>
     <string name="about_dev_summary">Apri il mio profilo su Github (richiede connessione internet).</string>
     <string name="about_donate">Dona</string>
-    <string name="about_donate_summary">Se ti piace l'app, puoi farmi una donazione tramite Paypal (richiede connessione internet).</string>
+    <string name="about_donate_summary">Se ti piace l\'app, puoi farmi una donazione tramite Paypal (richiede connessione internet).</string>
     <string name="about_license">Licenza</string>
-    <string name="about_license_summary">L'app è rilasciata sotto licenza GPL ed è completamente open source e gratuita (come in libertà).</string>
-    <string name="about_license_1_title">Immagini dell'allenamento</string>
-    <string name="about_license_1">Le immagini dell'allenamento si trovano sul blog di "C. Gilbert". Grazie a lei per il permesso di usarle nell'app.</string>
+    <string name="about_license_summary">L\'app è rilasciata sotto licenza GPL ed è completamente open source e gratuita (come in libertà).</string>
+    <string name="about_license_1_title">Immagini dell\'allenamento</string>
+    <string name="about_license_1">Le immagini dell\'allenamento si trovano sul blog di "C. Gilbert". Grazie a lei per il permesso di usarle nell\'app.</string>
     <string name="about_license_2_title">Fischietto</string>
     <string name="about_license_2">Il fischietto è disponibile sotto licenza Creative Commons 0.</string>
     <string name="about_license_3">Usato per creare la schermata introduttiva.</string>
