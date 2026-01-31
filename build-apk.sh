@@ -331,7 +331,7 @@ sign_apk() {
     
     APK_PATH="$SCRIPT_DIR/app/build/outputs/apk/release/app-release-unsigned.apk"
     KEYSTORE_PATH="$SCRIPT_DIR/sieben-release-key.keystore"
-    SIGNED_APK_PATH="$SCRIPT_DIR/app/build/outputs/apk/release/sieben-v1.9-release.apk"
+    SIGNED_APK_PATH="$SCRIPT_DIR/app/build/outputs/apk/release/sieben-v2.3-release.apk"
     
     if [ ! -f "$KEYSTORE_PATH" ]; then
         print_info "Keystore not found. Creating new keystore..."
