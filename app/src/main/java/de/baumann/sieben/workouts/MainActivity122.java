@@ -299,6 +299,9 @@ public class MainActivity122 extends AppCompatActivity {
 
         sharedPref.edit().putInt("ex12_number", (sharedPref.getInt("ex12_number", 0) + 1)).apply();
         sharedPref.edit().putInt("ex12_time", (sharedPref.getInt("ex12_time", 0) + (duration * 1000))).apply();
+        
+        // Track daily statistics
+        DailyStatsHelper.incrementTodayCount(this);
 
         if (sharedPref.getBoolean ("beep", false)){
             SoundPool.playWhistle(getApplicationContext());

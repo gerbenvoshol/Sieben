@@ -256,11 +256,11 @@ public class Activity_statistics extends AppCompatActivity {
                 String displayDate = displayFormat.format(calendar.getTime());
                 Integer count = weeklyStats.get(displayDate);
                 if (count == null) count = 0;
-                overviewText.append(displayDate).append(": ").append(count);
+                overviewText.append(displayDate).append(": ").append(count).append(" ");
                 if (count == 1) {
-                    overviewText.append(" ").append(getString(R.string.stat_week_exercises).replace("exercises", "exercise"));
+                    overviewText.append(getString(R.string.stat_week_exercise));
                 } else {
-                    overviewText.append(" ").append(getString(R.string.stat_week_exercises));
+                    overviewText.append(getString(R.string.stat_week_exercises));
                 }
                 overviewText.append("\n");
                 calendar.add(Calendar.DAY_OF_YEAR, 1);

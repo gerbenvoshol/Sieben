@@ -18,6 +18,7 @@
     <string name="stat_week_overview">Week Overview (Sun - Sat)</string>
     <string name="stat_week_total">Total this week:</string>
     <string name="stat_week_exercises">exercises</string>
+    <string name="stat_week_exercise">exercise</string>
 
     <string name="sort">Sort entries</string>
     <string name="sort_icon">by name</string>
