@@ -8,9 +8,35 @@
     tools:context=".workouts.MainActivity1"
     tools:showIn="@layout/activity_main">
 
+    <LinearLayout
+        android:id="@+id/weekOverviewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/weekOverviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stat_week_overview"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/weekOverviewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weekOverviewContainer" />
 
 </RelativeLayout>

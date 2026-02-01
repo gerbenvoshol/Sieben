@@ -17,6 +17,7 @@ import android.widget.TextView;
 import at.juggle.sieben.SoundPool;
 import de.baumann.sieben.MainActivity;
 import de.baumann.sieben.helper.CountDownTimer;
+import de.baumann.sieben.helper.DailyStatsHelper;
 import de.baumann.sieben.pause.Pause;
 import de.baumann.sieben.pause.Pause11;
 import de.baumann.sieben.pause.Pause2;
@@ -304,6 +305,9 @@ public class MainActivity11 extends AppCompatActivity {
 
         sharedPref.edit().putInt("ex11_number", (sharedPref.getInt("ex11_number", 0) + 1)).apply();
         sharedPref.edit().putInt("ex11_time", (sharedPref.getInt("ex11_time", 0) + (duration * 1000))).apply();
+        
+        // Track daily statistics
+        DailyStatsHelper.incrementTodayCount(this);
 
         if (sharedPref.getBoolean ("beep", false)){
             SoundPool.playWhistle(getApplicationContext());
