@@ -378,13 +378,36 @@ public class MainActivity5 extends AppCompatActivity {
             overridePendingTransition(0, 0);
             finishAffinity();
         } else {
-            if (sharedPref.getBoolean("endless", false)) {
+            // Get the number of repetitions configured (0 = endless)
+            int targetRepetitions;
+            try {
+                targetRepetitions = Integer.parseInt(sharedPref.getString("repetitions", "1"));
+            } catch (NumberFormatException e) {
+                // Default to 1 repetition if invalid input
+                targetRepetitions = 1;
+            }
+            
+            int currentRepetition = sharedPref.getInt("current_repetition", 0);
+            
+            // Increment current repetition count
+            currentRepetition++;
+            
+            // Check if we should repeat the workout
+            boolean shouldRepeat = (targetRepetitions == 0) || (currentRepetition < targetRepetitions);
+            
+            if (shouldRepeat) {
+                // Store the current repetition count
+                sharedPref.edit().putInt("current_repetition", currentRepetition).apply();
+                
                 Intent intent_in = new Intent(MainActivity5.this, MainActivity.class);
                 intent_in.setAction("endless_workout");
                 startActivity(intent_in);
                 overridePendingTransition(0, 0);
                 finishAffinity();
             } else {
+                // Reset repetition counter for next workout
+                sharedPref.edit().putInt("current_repetition", 0).apply();
+                
                 textView.setText(R.string.end);
             }
         }
