@@ -17,6 +17,7 @@ import android.widget.TextView;
 import at.juggle.sieben.SoundPool;
 import de.baumann.sieben.MainActivity;
 import de.baumann.sieben.helper.CountDownTimer;
+import de.baumann.sieben.helper.DailyStatsHelper;
 import de.baumann.sieben.pause.Pause;
 import de.baumann.sieben.pause.Pause10;
 import de.baumann.sieben.pause.Pause2;

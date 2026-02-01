@@ -36,8 +36,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 
+import java.util.Calendar;
 import java.util.Locale;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import de.baumann.sieben.R;
@@ -77,7 +80,7 @@ public class Activity_statistics extends AppCompatActivity {
         db = new DbAdapter_Statistics(this);
         db.open();
 
-
+        setWeekOverview();
 
         setFilesList();
     }
@@ -228,6 +231,46 @@ public class Activity_statistics extends AppCompatActivity {
     private void reset (String number, String time) {
         sharedPref.edit().putInt(number, 0).apply();
         sharedPref.edit().putInt(time, 0).apply();
+    }
+
+    private void setWeekOverview() {
+        TextView weekOverviewText = (TextView) findViewById(R.id.weekOverviewText);
+        
+        if (weekOverviewText != null) {
+            // Get weekly statistics
+            Map<String, Integer> weeklyStats = DailyStatsHelper.getWeeklyStatsWithDates(this);
+            int weekTotal = DailyStatsHelper.getWeeklyTotal(this);
+            
+            // Build the overview text
+            StringBuilder overviewText = new StringBuilder();
+            
+            // Get the current week's dates (Sunday to Saturday)
+            Calendar calendar = Calendar.getInstance();
+            int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+            int daysFromSunday = dayOfWeek - Calendar.SUNDAY;
+            calendar.add(Calendar.DAY_OF_YEAR, -daysFromSunday);
+            
+            // Format and display each day
+            java.text.SimpleDateFormat displayFormat = new java.text.SimpleDateFormat("EEE, MMM d", Locale.getDefault());
+            for (int i = 0; i < 7; i++) {
+                String displayDate = displayFormat.format(calendar.getTime());
+                Integer count = weeklyStats.get(displayDate);
+                if (count == null) count = 0;
+                overviewText.append(displayDate).append(": ").append(count);
+                if (count == 1) {
+                    overviewText.append(" ").append(getString(R.string.stat_week_exercises).replace("exercises", "exercise"));
+                } else {
+                    overviewText.append(" ").append(getString(R.string.stat_week_exercises));
+                }
+                overviewText.append("\n");
+                calendar.add(Calendar.DAY_OF_YEAR, 1);
+            }
+            
+            // Add total for the week
+            overviewText.append("\n").append(getString(R.string.stat_week_total)).append(" ").append(weekTotal).append(" ").append(getString(R.string.stat_week_exercises));
+            
+            weekOverviewText.setText(overviewText.toString());
+        }
     }
 
     @Override

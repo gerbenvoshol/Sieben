@@ -116,6 +116,12 @@ class About_content {
         authorCardBuilder2.title(R.string.about_title_ext);
 
         authorCardBuilder2.addItem(new MaterialAboutActionItem.Builder()
+                .text("Gaukler Faun")
+                .subText(R.string.about_title_ext0)
+                .icon(R.drawable.github_circle)
+                .build());
+
+        authorCardBuilder2.addItem(new MaterialAboutActionItem.Builder()
                 .text("Gilles Coulais")
                 .subText(R.string.about_title_ext1)
                 .icon(R.drawable.github_circle)

@@ -15,6 +15,9 @@
     <string name="stat_time">Overall time:</string>
     <string name="stat_number">Count:</string>
     <string name="stat_average">Average:</string>
+    <string name="stat_week_overview">Week Overview (Sun - Sat)</string>
+    <string name="stat_week_total">Total this week:</string>
+    <string name="stat_week_exercises">exercises</string>
 
     <string name="sort">Sort entries</string>
     <string name="sort_icon">by name</string>
@@ -156,6 +159,7 @@
     <string name="about_title_dev">Developer</string>
     <string name="about_title_libs">Used resources</string>
     <string name="about_title_ext">Contributors</string>
+    <string name="about_title_ext0">Original author</string>
     <string name="about_title_ext1">French translation</string>
     <string name="about_title_ext2">Small fixes and whistle</string>
     <string name="about_title_ext3">Japanese translation</string>
