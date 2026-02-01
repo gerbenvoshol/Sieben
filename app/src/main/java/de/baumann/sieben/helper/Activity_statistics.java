@@ -286,64 +286,62 @@ public class Activity_statistics extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
 
-        switch (item.getItemId()) {
+        int id = item.getItemId();
 
-            case R.id.ex_icon:
-                sharedPref.edit().putString("sortDBF", "title").apply();
-                setTitle();
-                setFilesList();
-                return true;
-            case R.id.ex_number:
-                sharedPref.edit().putString("sortDBF", "number").apply();
-                setTitle();
-                setFilesList();
-                return true;
-            case R.id.ex_hms:
-                sharedPref.edit().putString("sortDBF", "hms").apply();
-                setTitle();
-                setFilesList();
-                return true;
-            case R.id.ex_average:
-                sharedPref.edit().putString("sortDBF", "average").apply();
-                setTitle();
-                setFilesList();
-                return true;
-            
-            case android.R.id.home:
-                finish();
-                return true;
+        if (id == R.id.ex_icon) {
+            sharedPref.edit().putString("sortDBF", "title").apply();
+            setTitle();
+            setFilesList();
+            return true;
+        } else if (id == R.id.ex_number) {
+            sharedPref.edit().putString("sortDBF", "number").apply();
+            setTitle();
+            setFilesList();
+            return true;
+        } else if (id == R.id.ex_hms) {
+            sharedPref.edit().putString("sortDBF", "hms").apply();
+            setTitle();
+            setFilesList();
+            return true;
+        } else if (id == R.id.ex_average) {
+            sharedPref.edit().putString("sortDBF", "average").apply();
+            setTitle();
+            setFilesList();
+            return true;
+        } else if (id == android.R.id.home) {
+            finish();
+            return true;
+        } else if (id == R.id.action_reset) {
+            final android.support.v7.app.AlertDialog.Builder dialog = new android.support.v7.app.AlertDialog.Builder(Activity_statistics.this)
+                    .setTitle(R.string.app_con)
+                    .setMessage(R.string.app_con_message)
+                    .setPositiveButton(R.string.app_ok, new DialogInterface.OnClickListener() {
 
-            case R.id.action_reset:
-                final android.support.v7.app.AlertDialog.Builder dialog = new android.support.v7.app.AlertDialog.Builder(Activity_statistics.this)
-                        .setTitle(R.string.app_con)
-                        .setMessage(R.string.app_con_message)
-                        .setPositiveButton(R.string.app_ok, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                            reset("ex1_number", "ex1_time");
+                            reset("ex2_number", "ex2_time");
+                            reset("ex3_number", "ex3_time");
+                            reset("ex4_number", "ex4_time");
+                            reset("ex5_number", "ex5_time");
+                            reset("ex6_number", "ex6_time");
+                            reset("ex7_number", "ex7_time");
+                            reset("ex8_number", "ex8_time");
+                            reset("ex9_number", "ex9_time");
+                            reset("ex10_number", "ex10_time");
+                            reset("ex11_number", "ex11_time");
+                            reset("ex12_number", "ex12_time");
+                            finish();
+                        }
+                    })
+                    .setNegativeButton(R.string.app_no, new DialogInterface.OnClickListener() {
 
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                reset("ex1_number", "ex1_time");
-                                reset("ex2_number", "ex2_time");
-                                reset("ex3_number", "ex3_time");
-                                reset("ex4_number", "ex4_time");
-                                reset("ex5_number", "ex5_time");
-                                reset("ex6_number", "ex6_time");
-                                reset("ex7_number", "ex7_time");
-                                reset("ex8_number", "ex8_time");
-                                reset("ex9_number", "ex9_time");
-                                reset("ex10_number", "ex10_time");
-                                reset("ex11_number", "ex11_time");
-                                reset("ex12_number", "ex12_time");
-                                finish();
-                            }
-                        })
-                        .setNegativeButton(R.string.app_no, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                            dialog.cancel();
+                        }
+                    });
+            dialog.show();
 
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                dialog.cancel();
-                            }
-                        });
-                dialog.show();
-
-                return true;
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
