@@ -4,6 +4,9 @@
 - upgraded: Target SDK from 25 (Android 7.1) to 34 (Android 14)
 - fixed: DefaultDomainObjectSet compatibility issue
 - updated: Build dependencies to modern syntax (implementation/testImplementation)
+- added: Gaukler Faun to contributors list (original author)
+- added: Weekly statistics overview showing exercise counts from Sunday to Saturday
+- added: Daily exercise tracking with date-based statistics
 
 ### v 2.3
 - updated: French translation
