@@ -72,7 +72,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Reset repetition counter when activity is created (new workout session)
         // Don't reset if this is a continuation of an endless workout
-        if (savedInstanceState == null && !"endless_workout".equals(getIntent().getAction())) {
+        Intent intent = getIntent();
+        String action = intent != null ? intent.getAction() : null;
+        if (savedInstanceState == null && !"endless_workout".equals(action)) {
             sharedPref.edit().putInt("current_repetition", 0).apply();
         }
 
@@ -268,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        onNewIntent(getIntent());
+        onNewIntent(intent);
     }
 
     protected void onNewIntent(final Intent intent) {
