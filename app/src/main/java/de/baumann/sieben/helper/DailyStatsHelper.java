@@ -124,20 +124,21 @@ public class DailyStatsHelper {
         int currentWeek = calendar.get(Calendar.WEEK_OF_YEAR);
         int currentYear = calendar.get(Calendar.YEAR);
         
-        // Start from week 1 of current year
-        calendar.set(Calendar.WEEK_OF_YEAR, 1);
-        calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
-        calendar.set(Calendar.YEAR, currentYear);
-        
         // Iterate through each week up to current week
         for (int week = 1; week <= currentWeek; week++) {
             int weekTotal = 0;
             
+            // Set calendar to the start of this week (Sunday)
+            Calendar weekCalendar = Calendar.getInstance();
+            weekCalendar.set(Calendar.YEAR, currentYear);
+            weekCalendar.set(Calendar.WEEK_OF_YEAR, week);
+            weekCalendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
+            
             // Sum up exercises for all 7 days of this week
             for (int day = 0; day < 7; day++) {
-                String dateKey = getDateKey(calendar);
+                String dateKey = getDateKey(weekCalendar);
                 weekTotal += getCountForDate(context, dateKey);
-                calendar.add(Calendar.DAY_OF_YEAR, 1);
+                weekCalendar.add(Calendar.DAY_OF_YEAR, 1);
             }
             
             ytdStats.put(week, weekTotal);
