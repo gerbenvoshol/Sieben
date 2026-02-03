@@ -111,4 +111,50 @@ public class DailyStatsHelper {
         }
         return total;
     }
+
+    /**
+     * Get Year-to-Date (YTD) statistics by week
+     * Returns a Map with week number as key and total exercises for that week as value
+     */
+    public static Map<Integer, Integer> getYTDWeeklyStats(Context context) {
+        Map<Integer, Integer> ytdStats = new HashMap<>();
+        Calendar calendar = Calendar.getInstance();
+        
+        // Get current week of year
+        int currentWeek = calendar.get(Calendar.WEEK_OF_YEAR);
+        int currentYear = calendar.get(Calendar.YEAR);
+        
+        // Start from week 1 of current year
+        calendar.set(Calendar.WEEK_OF_YEAR, 1);
+        calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
+        calendar.set(Calendar.YEAR, currentYear);
+        
+        // Iterate through each week up to current week
+        for (int week = 1; week <= currentWeek; week++) {
+            int weekTotal = 0;
+            
+            // Sum up exercises for all 7 days of this week
+            for (int day = 0; day < 7; day++) {
+                String dateKey = getDateKey(calendar);
+                weekTotal += getCountForDate(context, dateKey);
+                calendar.add(Calendar.DAY_OF_YEAR, 1);
+            }
+            
+            ytdStats.put(week, weekTotal);
+        }
+        
+        return ytdStats;
+    }
+
+    /**
+     * Get the total count for the entire year to date
+     */
+    public static int getYTDTotal(Context context) {
+        Map<Integer, Integer> ytdStats = getYTDWeeklyStats(context);
+        int total = 0;
+        for (Integer count : ytdStats.values()) {
+            total += count;
+        }
+        return total;
+    }
 }

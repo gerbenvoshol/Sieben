@@ -19,6 +19,10 @@
     <string name="stat_week_total">Total this week:</string>
     <string name="stat_week_exercises">exercises</string>
     <string name="stat_week_exercise">exercise</string>
+    <string name="stat_ytd_overview">Year-to-Date Weekly Stats</string>
+    <string name="stat_ytd_total">Total exercises this year:</string>
+    <string name="stat_ytd_chart_desc">Exercises per week</string>
+    <string name="stat_ytd_week_label">Week</string>
 
     <string name="sort">Sort entries</string>
     <string name="sort_icon">by name</string>

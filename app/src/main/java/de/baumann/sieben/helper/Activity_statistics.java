@@ -23,6 +23,7 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
@@ -38,7 +39,17 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.formatter.ValueFormatter;
+
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -81,6 +92,7 @@ public class Activity_statistics extends AppCompatActivity {
         db.open();
 
         setWeekOverview();
+        setYTDOverview();
 
         setFilesList();
     }
@@ -270,6 +282,69 @@ public class Activity_statistics extends AppCompatActivity {
             overviewText.append("\n").append(getString(R.string.stat_week_total)).append(" ").append(weekTotal).append(" ").append(getString(R.string.stat_week_exercises));
             
             weekOverviewText.setText(overviewText.toString());
+        }
+    }
+
+    private void setYTDOverview() {
+        TextView ytdTotalText = (TextView) findViewById(R.id.ytdTotalText);
+        BarChart ytdChart = (BarChart) findViewById(R.id.ytdChart);
+        
+        if (ytdTotalText != null && ytdChart != null) {
+            // Get YTD statistics
+            Map<Integer, Integer> ytdStats = DailyStatsHelper.getYTDWeeklyStats(this);
+            int ytdTotal = DailyStatsHelper.getYTDTotal(this);
+            
+            // Set total text
+            ytdTotalText.setText(getString(R.string.stat_ytd_total) + " " + ytdTotal + " " + getString(R.string.stat_week_exercises));
+            
+            // Prepare chart data
+            List<BarEntry> entries = new ArrayList<>();
+            for (Map.Entry<Integer, Integer> entry : ytdStats.entrySet()) {
+                entries.add(new BarEntry(entry.getKey(), entry.getValue()));
+            }
+            
+            // Create dataset
+            BarDataSet dataSet = new BarDataSet(entries, getString(R.string.stat_ytd_chart_desc));
+            dataSet.setColor(Color.parseColor("#2196F3")); // Material Blue
+            dataSet.setValueTextColor(Color.BLACK);
+            dataSet.setValueTextSize(10f);
+            
+            // Create BarData
+            BarData barData = new BarData(dataSet);
+            barData.setBarWidth(0.8f);
+            
+            // Configure chart
+            ytdChart.setData(barData);
+            ytdChart.setFitBars(true);
+            ytdChart.getDescription().setText("");
+            ytdChart.getDescription().setEnabled(false);
+            ytdChart.setDrawGridBackground(false);
+            ytdChart.animateY(1000);
+            ytdChart.getLegend().setEnabled(false);
+            
+            // Configure X-axis
+            XAxis xAxis = ytdChart.getXAxis();
+            xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+            xAxis.setDrawGridLines(false);
+            xAxis.setGranularity(1f);
+            xAxis.setValueFormatter(new ValueFormatter() {
+                @Override
+                public String getFormattedValue(float value) {
+                    return getString(R.string.stat_ytd_week_label) + " " + (int)value;
+                }
+            });
+            
+            // Configure Y-axis
+            YAxis leftAxis = ytdChart.getAxisLeft();
+            leftAxis.setDrawGridLines(true);
+            leftAxis.setAxisMinimum(0f);
+            leftAxis.setGranularity(1f);
+            
+            YAxis rightAxis = ytdChart.getAxisRight();
+            rightAxis.setEnabled(false);
+            
+            // Refresh chart
+            ytdChart.invalidate();
         }
     }
 
