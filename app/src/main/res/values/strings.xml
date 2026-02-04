@@ -19,6 +19,21 @@
     <string name="stat_week_total">Total this week:</string>
     <string name="stat_week_exercises">exercises</string>
     <string name="stat_week_exercise">exercise</string>
+    <string name="stat_week_workout_time">Total workout time:</string>
+    <string name="stat_week_calories">Calories burned:</string>
+    <string name="stat_week_avg_daily">Avg. daily exercises:</string>
+    <string name="stat_week_chart_title">Daily Exercises This Week</string>
+    <string name="stat_day_sun">Sun</string>
+    <string name="stat_day_mon">Mon</string>
+    <string name="stat_day_tue">Tue</string>
+    <string name="stat_day_wed">Wed</string>
+    <string name="stat_day_thu">Thu</string>
+    <string name="stat_day_fri">Fri</string>
+    <string name="stat_day_sat">Sat</string>
+    <string name="stat_ytd_overview">Year-to-Date Weekly Stats</string>
+    <string name="stat_ytd_total">Total exercises this year:</string>
+    <string name="stat_ytd_chart_desc">Exercises per week</string>
+    <string name="stat_ytd_week_label">Week</string>
 
     <string name="sort">Sort entries</string>
     <string name="sort_icon">by name</string>

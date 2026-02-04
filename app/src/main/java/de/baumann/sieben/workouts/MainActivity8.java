@@ -312,8 +312,8 @@ public class MainActivity8 extends AppCompatActivity {
         sharedPref.edit().putInt("ex8_number", (sharedPref.getInt("ex8_number", 0) + 1)).apply();
         sharedPref.edit().putInt("ex8_time", (sharedPref.getInt("ex8_time", 0) + (duration * 1000))).apply();
         
-        // Track daily statistics
-        DailyStatsHelper.incrementTodayCount(this);
+        // Track daily statistics with actual workout duration
+        DailyStatsHelper.incrementTodayCount(this, duration * 1000);
 
         if (sharedPref.getBoolean ("beep", false)){
             SoundPool.playWhistle(getApplicationContext());
