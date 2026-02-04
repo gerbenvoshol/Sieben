@@ -14,7 +14,6 @@ public class DailyStatsHelper {
 
     private static final String DAILY_STATS_PREFIX = "daily_stats_";
     private static final String DAILY_TIME_PREFIX = "daily_time_";
-    private static final int AVERAGE_WORKOUT_DURATION_MS = 7 * 60 * 1000; // 7 minutes in milliseconds
     // Approximate calories burned per minute of exercise
     // Note: This is a rough estimate. Actual calorie burn varies significantly based on
     // individual factors such as weight, age, gender, fitness level, and exercise intensity.
@@ -23,17 +22,19 @@ public class DailyStatsHelper {
 
     /**
      * Increment the daily exercise count for today
+     * @param context The application context
+     * @param durationMs The actual workout duration in milliseconds
      */
-    public static void incrementTodayCount(Context context) {
+    public static void incrementTodayCount(Context context, long durationMs) {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
         String today = getTodayKey();
         int currentCount = sharedPref.getInt(today, 0);
         sharedPref.edit().putInt(today, currentCount + 1).apply();
         
-        // Also increment workout time (assume 7 minutes per workout)
+        // Also increment workout time with actual duration
         String timeKey = getTimeKey(today);
         long currentTime = sharedPref.getLong(timeKey, 0);
-        sharedPref.edit().putLong(timeKey, currentTime + AVERAGE_WORKOUT_DURATION_MS).apply();
+        sharedPref.edit().putLong(timeKey, currentTime + durationMs).apply();
     }
     
     /**
