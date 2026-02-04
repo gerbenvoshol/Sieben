@@ -13,6 +13,9 @@ import java.util.Map;
 public class DailyStatsHelper {
 
     private static final String DAILY_STATS_PREFIX = "daily_stats_";
+    private static final String DAILY_TIME_PREFIX = "daily_time_";
+    private static final int AVERAGE_WORKOUT_DURATION_MS = 7 * 60 * 1000; // 7 minutes in milliseconds
+    private static final double CALORIES_PER_MINUTE = 10.0; // Approximate calories burned per minute
 
     /**
      * Increment the daily exercise count for today
@@ -22,6 +25,27 @@ public class DailyStatsHelper {
         String today = getTodayKey();
         int currentCount = sharedPref.getInt(today, 0);
         sharedPref.edit().putInt(today, currentCount + 1).apply();
+        
+        // Also increment workout time (assume 7 minutes per workout)
+        String timeKey = getTimeKey(today);
+        long currentTime = sharedPref.getLong(timeKey, 0);
+        sharedPref.edit().putLong(timeKey, currentTime + AVERAGE_WORKOUT_DURATION_MS).apply();
+    }
+    
+    /**
+     * Get time key from date key
+     */
+    private static String getTimeKey(String dateKey) {
+        return dateKey.replace(DAILY_STATS_PREFIX, DAILY_TIME_PREFIX);
+    }
+    
+    /**
+     * Get the workout time in milliseconds for a specific date
+     */
+    public static long getTimeForDate(Context context, String dateKey) {
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
+        String timeKey = getTimeKey(dateKey);
+        return sharedPref.getLong(timeKey, 0);
     }
 
     /**
@@ -110,6 +134,66 @@ public class DailyStatsHelper {
             total += count;
         }
         return total;
+    }
+    
+    /**
+     * Get the total workout time in milliseconds for the current week
+     */
+    public static long getWeeklyTotalTime(Context context) {
+        Calendar calendar = Calendar.getInstance();
+        
+        // Move to last Sunday (or today if it's Sunday)
+        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+        int daysFromSunday = dayOfWeek - Calendar.SUNDAY;
+        calendar.add(Calendar.DAY_OF_YEAR, -daysFromSunday);
+        
+        long totalTime = 0;
+        for (int i = 0; i < 7; i++) {
+            String dateKey = getDateKey(calendar);
+            totalTime += getTimeForDate(context, dateKey);
+            calendar.add(Calendar.DAY_OF_YEAR, 1);
+        }
+        
+        return totalTime;
+    }
+    
+    /**
+     * Get estimated calories burned for the current week
+     */
+    public static int getWeeklyCalories(Context context) {
+        long totalTimeMs = getWeeklyTotalTime(context);
+        double totalMinutes = totalTimeMs / (60.0 * 1000.0);
+        return (int) Math.round(totalMinutes * CALORIES_PER_MINUTE);
+    }
+    
+    /**
+     * Get daily exercise counts for the current week (for chart)
+     * Returns an array of 7 integers (Sunday to Saturday)
+     */
+    public static int[] getWeeklyDailyCounts(Context context) {
+        int[] dailyCounts = new int[7];
+        Calendar calendar = Calendar.getInstance();
+        
+        // Move to last Sunday (or today if it's Sunday)
+        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+        int daysFromSunday = dayOfWeek - Calendar.SUNDAY;
+        calendar.add(Calendar.DAY_OF_YEAR, -daysFromSunday);
+        
+        for (int i = 0; i < 7; i++) {
+            String dateKey = getDateKey(calendar);
+            dailyCounts[i] = getCountForDate(context, dateKey);
+            calendar.add(Calendar.DAY_OF_YEAR, 1);
+        }
+        
+        return dailyCounts;
+    }
+    
+    /**
+     * Get the average daily exercises for the current week
+     */
+    public static float getWeeklyAverage(Context context) {
+        int total = getWeeklyTotal(context);
+        return total / 7.0f;
     }
 
     /**

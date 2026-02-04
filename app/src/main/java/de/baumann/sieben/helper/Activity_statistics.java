@@ -246,42 +246,101 @@ public class Activity_statistics extends AppCompatActivity {
     }
 
     private void setWeekOverview() {
-        TextView weekOverviewText = (TextView) findViewById(R.id.weekOverviewText);
+        // Get views
+        TextView weekTotalExercises = (TextView) findViewById(R.id.weekTotalExercises);
+        TextView weekTotalTime = (TextView) findViewById(R.id.weekTotalTime);
+        TextView weekCalories = (TextView) findViewById(R.id.weekCalories);
+        TextView weekAvgDaily = (TextView) findViewById(R.id.weekAvgDaily);
+        BarChart weekChart = (BarChart) findViewById(R.id.weekChart);
         
-        if (weekOverviewText != null) {
+        if (weekTotalExercises != null && weekChart != null) {
             // Get weekly statistics
-            Map<String, Integer> weeklyStats = DailyStatsHelper.getWeeklyStatsWithDates(this);
             int weekTotal = DailyStatsHelper.getWeeklyTotal(this);
+            long weekTimeMs = DailyStatsHelper.getWeeklyTotalTime(this);
+            int weekCaloriesCount = DailyStatsHelper.getWeeklyCalories(this);
+            float weekAvg = DailyStatsHelper.getWeeklyAverage(this);
+            int[] dailyCounts = DailyStatsHelper.getWeeklyDailyCounts(this);
             
-            // Build the overview text
-            StringBuilder overviewText = new StringBuilder();
+            // Set summary card values
+            weekTotalExercises.setText(String.valueOf(weekTotal));
             
-            // Get the current week's dates (Sunday to Saturday)
-            Calendar calendar = Calendar.getInstance();
-            int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-            int daysFromSunday = dayOfWeek - Calendar.SUNDAY;
-            calendar.add(Calendar.DAY_OF_YEAR, -daysFromSunday);
-            
-            // Format and display each day
-            java.text.SimpleDateFormat displayFormat = new java.text.SimpleDateFormat("EEE, MMM d", Locale.getDefault());
-            for (int i = 0; i < 7; i++) {
-                String displayDate = displayFormat.format(calendar.getTime());
-                Integer count = weeklyStats.get(displayDate);
-                if (count == null) count = 0;
-                overviewText.append(displayDate).append(": ").append(count).append(" ");
-                if (count == 1) {
-                    overviewText.append(getString(R.string.stat_week_exercise));
-                } else {
-                    overviewText.append(getString(R.string.stat_week_exercises));
-                }
-                overviewText.append("\n");
-                calendar.add(Calendar.DAY_OF_YEAR, 1);
+            // Format time (convert ms to minutes)
+            int totalMinutes = (int) (weekTimeMs / (60 * 1000));
+            int hours = totalMinutes / 60;
+            int minutes = totalMinutes % 60;
+            if (hours > 0) {
+                weekTotalTime.setText(hours + "h " + minutes + "m");
+            } else {
+                weekTotalTime.setText(minutes + "m");
             }
             
-            // Add total for the week
-            overviewText.append("\n").append(getString(R.string.stat_week_total)).append(" ").append(weekTotal).append(" ").append(getString(R.string.stat_week_exercises));
+            weekCalories.setText(weekCaloriesCount + " cal");
+            weekAvgDaily.setText(String.format(Locale.getDefault(), "%.1f", weekAvg));
             
-            weekOverviewText.setText(overviewText.toString());
+            // Prepare chart data
+            List<BarEntry> entries = new ArrayList<>();
+            String[] dayLabels = new String[] {
+                getString(R.string.stat_day_sun),
+                getString(R.string.stat_day_mon),
+                getString(R.string.stat_day_tue),
+                getString(R.string.stat_day_wed),
+                getString(R.string.stat_day_thu),
+                getString(R.string.stat_day_fri),
+                getString(R.string.stat_day_sat)
+            };
+            
+            for (int i = 0; i < dailyCounts.length; i++) {
+                entries.add(new BarEntry(i, dailyCounts[i]));
+            }
+            
+            // Create dataset
+            BarDataSet dataSet = new BarDataSet(entries, "");
+            dataSet.setColor(Color.parseColor("#2196F3")); // Material Blue
+            dataSet.setValueTextColor(Color.BLACK);
+            dataSet.setValueTextSize(10f);
+            
+            // Create BarData
+            BarData barData = new BarData(dataSet);
+            barData.setBarWidth(0.7f);
+            
+            // Configure chart
+            weekChart.setData(barData);
+            weekChart.setFitBars(true);
+            weekChart.getDescription().setText("");
+            weekChart.getDescription().setEnabled(false);
+            weekChart.setDrawGridBackground(false);
+            weekChart.animateY(800);
+            weekChart.getLegend().setEnabled(false);
+            weekChart.setDrawValueAboveBar(true);
+            
+            // Configure X-axis
+            XAxis xAxis = weekChart.getXAxis();
+            xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+            xAxis.setDrawGridLines(false);
+            xAxis.setGranularity(1f);
+            xAxis.setLabelCount(7);
+            xAxis.setValueFormatter(new ValueFormatter() {
+                @Override
+                public String getFormattedValue(float value) {
+                    int index = (int) value;
+                    if (index >= 0 && index < dayLabels.length) {
+                        return dayLabels[index];
+                    }
+                    return "";
+                }
+            });
+            
+            // Configure Y-axis
+            YAxis leftAxis = weekChart.getAxisLeft();
+            leftAxis.setDrawGridLines(true);
+            leftAxis.setAxisMinimum(0f);
+            leftAxis.setGranularity(1f);
+            
+            YAxis rightAxis = weekChart.getAxisRight();
+            rightAxis.setEnabled(false);
+            
+            // Refresh chart
+            weekChart.invalidate();
         }
     }
 
