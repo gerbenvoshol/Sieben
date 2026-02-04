@@ -15,7 +15,11 @@ public class DailyStatsHelper {
     private static final String DAILY_STATS_PREFIX = "daily_stats_";
     private static final String DAILY_TIME_PREFIX = "daily_time_";
     private static final int AVERAGE_WORKOUT_DURATION_MS = 7 * 60 * 1000; // 7 minutes in milliseconds
-    private static final double CALORIES_PER_MINUTE = 10.0; // Approximate calories burned per minute
+    // Approximate calories burned per minute of exercise
+    // Note: This is a rough estimate. Actual calorie burn varies significantly based on
+    // individual factors such as weight, age, gender, fitness level, and exercise intensity.
+    // The 7-minute workout typically burns between 50-100 calories (7-14 cal/min).
+    private static final double CALORIES_PER_MINUTE = 10.0;
 
     /**
      * Increment the daily exercise count for today
