@@ -226,6 +226,26 @@ public class Activity_statistics extends AppCompatActivity {
         };
 
         listView.setAdapter(adapter);
+        setListViewHeightBasedOnChildren(listView);
+    }
+
+    private void setListViewHeightBasedOnChildren(ListView listView) {
+        SimpleCursorAdapter adapter = (SimpleCursorAdapter) listView.getAdapter();
+        if (adapter == null) {
+            return;
+        }
+
+        int totalHeight = 0;
+        for (int i = 0; i < adapter.getCount(); i++) {
+            View listItem = adapter.getView(i, null, listView);
+            listItem.measure(0, 0);
+            totalHeight += listItem.getMeasuredHeight();
+        }
+
+        ViewGroup.LayoutParams params = listView.getLayoutParams();
+        params.height = totalHeight + (listView.getDividerHeight() * (adapter.getCount() - 1));
+        listView.setLayoutParams(params);
+        listView.requestLayout();
     }
 
     private void setTitle () {
