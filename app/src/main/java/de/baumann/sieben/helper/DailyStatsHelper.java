@@ -199,11 +199,59 @@ public class DailyStatsHelper {
     
     /**
      * Get estimated calories burned for the current week
+     * This method calculates calories based on actual exercises performed,
+     * using exercise-specific MET values rather than a simple average.
      */
     public static int getWeeklyCalories(Context context) {
-        long totalTimeMs = getWeeklyTotalTime(context);
-        double totalMinutes = totalTimeMs / (60.0 * 1000.0);
-        return (int) Math.round(totalMinutes * CALORIES_PER_MINUTE);
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
+        
+        // Get time spent on each exercise (in milliseconds)
+        long ex1Time = sharedPref.getInt("ex1_time", 0);
+        long ex2Time = sharedPref.getInt("ex2_time", 0);
+        long ex3Time = sharedPref.getInt("ex3_time", 0);
+        long ex4Time = sharedPref.getInt("ex4_time", 0);
+        long ex5Time = sharedPref.getInt("ex5_time", 0);
+        long ex6Time = sharedPref.getInt("ex6_time", 0);
+        long ex7Time = sharedPref.getInt("ex7_time", 0);
+        long ex8Time = sharedPref.getInt("ex8_time", 0);
+        long ex9Time = sharedPref.getInt("ex9_time", 0);
+        long ex10Time = sharedPref.getInt("ex10_time", 0);
+        long ex11Time = sharedPref.getInt("ex11_time", 0);
+        long ex12Time = sharedPref.getInt("ex12_time", 0);
+        
+        // Calculate calories for each exercise using its specific MET value
+        // Formula: Calories = MET × Weight(kg) × Time(hours) × EPOC_MULTIPLIER
+        double calories = 0;
+        calories += calculateExerciseCalories(ex1Time, MET_JUMPING_JACKS);
+        calories += calculateExerciseCalories(ex2Time, MET_WALL_SIT);
+        calories += calculateExerciseCalories(ex3Time, MET_PUSH_UPS);
+        calories += calculateExerciseCalories(ex4Time, MET_ABDOMINAL_CRUNCH);
+        calories += calculateExerciseCalories(ex5Time, MET_STEP_UP);
+        calories += calculateExerciseCalories(ex6Time, MET_SQUAT);
+        calories += calculateExerciseCalories(ex7Time, MET_TRICEPS_DIPS);
+        calories += calculateExerciseCalories(ex8Time, MET_PLANK);
+        calories += calculateExerciseCalories(ex9Time, MET_HIGH_KNEES);
+        calories += calculateExerciseCalories(ex10Time, MET_LUNGE);
+        calories += calculateExerciseCalories(ex11Time, MET_PUSH_UP_ROTATION);
+        calories += calculateExerciseCalories(ex12Time, MET_SIDE_PLANK);
+        
+        return (int) Math.round(calories);
+    }
+    
+    /**
+     * Calculate calories burned for a specific exercise
+     * @param timeMs Time spent on exercise in milliseconds
+     * @param metValue MET value for the exercise
+     * @return Calories burned
+     */
+    private static double calculateExerciseCalories(long timeMs, double metValue) {
+        if (timeMs <= 0) {
+            return 0;
+        }
+        // Convert milliseconds to hours
+        double timeHours = timeMs / (1000.0 * 60.0 * 60.0);
+        // Apply formula: Calories = MET × Weight(kg) × Time(hours) × EPOC_MULTIPLIER
+        return metValue * DEFAULT_WEIGHT_KG * timeHours * EPOC_MULTIPLIER;
     }
     
     /**
