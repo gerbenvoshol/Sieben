@@ -46,7 +46,8 @@ public class DailyStatsHelper {
     private static final double EPOC_MULTIPLIER = 1.15;
     
     // Final calories per minute calculation:
-    // Base: 6.25 MET × 70kg / 60 min = 7.29 cal/min
+    // Base formula: Calories = MET × Weight(kg) × Time(hours)
+    // For 1 minute: 6.25 MET × 70kg × (1/60 hours) = 7.29 cal/min
     // With EPOC: 7.29 × 1.15 = 8.39 cal/min
     // Note: This is a rough estimate. Actual calorie burn varies significantly based on
     // individual factors such as weight, age, gender, fitness level, and exercise intensity.
