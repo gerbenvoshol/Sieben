@@ -222,36 +222,54 @@ public class DailyStatsHelper {
         // Calculate calories for each exercise using its specific MET value
         // Formula: Calories = MET × Weight(kg) × Time(hours) × EPOC_MULTIPLIER
         double calories = 0;
-        calories += calculateExerciseCalories(ex1Time, MET_JUMPING_JACKS);
-        calories += calculateExerciseCalories(ex2Time, MET_WALL_SIT);
-        calories += calculateExerciseCalories(ex3Time, MET_PUSH_UPS);
-        calories += calculateExerciseCalories(ex4Time, MET_ABDOMINAL_CRUNCH);
-        calories += calculateExerciseCalories(ex5Time, MET_STEP_UP);
-        calories += calculateExerciseCalories(ex6Time, MET_SQUAT);
-        calories += calculateExerciseCalories(ex7Time, MET_TRICEPS_DIPS);
-        calories += calculateExerciseCalories(ex8Time, MET_PLANK);
-        calories += calculateExerciseCalories(ex9Time, MET_HIGH_KNEES);
-        calories += calculateExerciseCalories(ex10Time, MET_LUNGE);
-        calories += calculateExerciseCalories(ex11Time, MET_PUSH_UP_ROTATION);
-        calories += calculateExerciseCalories(ex12Time, MET_SIDE_PLANK);
+        calories += calculateExerciseCalories(context, ex1Time, MET_JUMPING_JACKS);
+        calories += calculateExerciseCalories(context, ex2Time, MET_WALL_SIT);
+        calories += calculateExerciseCalories(context, ex3Time, MET_PUSH_UPS);
+        calories += calculateExerciseCalories(context, ex4Time, MET_ABDOMINAL_CRUNCH);
+        calories += calculateExerciseCalories(context, ex5Time, MET_STEP_UP);
+        calories += calculateExerciseCalories(context, ex6Time, MET_SQUAT);
+        calories += calculateExerciseCalories(context, ex7Time, MET_TRICEPS_DIPS);
+        calories += calculateExerciseCalories(context, ex8Time, MET_PLANK);
+        calories += calculateExerciseCalories(context, ex9Time, MET_HIGH_KNEES);
+        calories += calculateExerciseCalories(context, ex10Time, MET_LUNGE);
+        calories += calculateExerciseCalories(context, ex11Time, MET_PUSH_UP_ROTATION);
+        calories += calculateExerciseCalories(context, ex12Time, MET_SIDE_PLANK);
         
         return (int) Math.round(calories);
     }
     
     /**
+     * Get the user's configured weight in kg, or default if not set
+     * @param context The application context
+     * @return Weight in kilograms
+     */
+    private static double getUserWeight(Context context) {
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
+        String weightStr = sharedPref.getString("weight", String.valueOf((int)DEFAULT_WEIGHT_KG));
+        try {
+            return Double.parseDouble(weightStr);
+        } catch (NumberFormatException e) {
+            return DEFAULT_WEIGHT_KG;
+        }
+    }
+    
+    /**
      * Calculate calories burned for a specific exercise
+     * @param context The application context
      * @param timeMs Time spent on exercise in milliseconds
      * @param metValue MET value for the exercise
      * @return Calories burned
      */
-    private static double calculateExerciseCalories(long timeMs, double metValue) {
+    private static double calculateExerciseCalories(Context context, long timeMs, double metValue) {
         if (timeMs <= 0) {
             return 0;
         }
         // Convert milliseconds to hours
         double timeHours = timeMs / (1000.0 * 60.0 * 60.0);
+        // Get user's weight (or default)
+        double weight = getUserWeight(context);
         // Apply formula: Calories = MET × Weight(kg) × Time(hours) × EPOC_MULTIPLIER
-        return metValue * DEFAULT_WEIGHT_KG * timeHours * EPOC_MULTIPLIER;
+        return metValue * weight * timeHours * EPOC_MULTIPLIER;
     }
     
     /**
