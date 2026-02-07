@@ -14,11 +14,45 @@ public class DailyStatsHelper {
 
     private static final String DAILY_STATS_PREFIX = "daily_stats_";
     private static final String DAILY_TIME_PREFIX = "daily_time_";
-    // Approximate calories burned per minute of exercise
+    
+    // MET (Metabolic Equivalent of Task) values for the 7-minute workout exercises
+    // Based on the Compendium of Physical Activities and research on HICT
+    // Source: Ainsworth BE et al. (2011) Compendium of Physical Activities
+    private static final double MET_JUMPING_JACKS = 8.0;      // Vigorous calisthenics
+    private static final double MET_WALL_SIT = 5.0;           // Isometric exercise
+    private static final double MET_PUSH_UPS = 8.0;           // Vigorous effort
+    private static final double MET_ABDOMINAL_CRUNCH = 4.5;   // Moderate calisthenics
+    private static final double MET_STEP_UP = 8.0;            // Vigorous step exercise
+    private static final double MET_SQUAT = 5.5;              // Moderate resistance
+    private static final double MET_TRICEPS_DIPS = 5.0;       // Moderate resistance
+    private static final double MET_PLANK = 4.0;              // Isometric core
+    private static final double MET_HIGH_KNEES = 10.0;        // Running in place vigorous
+    private static final double MET_LUNGE = 4.0;              // Moderate resistance
+    private static final double MET_PUSH_UP_ROTATION = 8.5;   // Advanced variation
+    private static final double MET_SIDE_PLANK = 4.5;         // Isometric core
+    
+    // Average MET for the 7-minute workout circuit
+    // (8.0 + 5.0 + 8.0 + 4.5 + 8.0 + 5.5 + 5.0 + 4.0 + 10.0 + 4.0 + 8.5 + 4.5) / 12 = 6.25
+    private static final double AVERAGE_MET_VALUE = 6.25;
+    
+    // Average adult weight in kg (used when user weight is not available)
+    // Based on global average of ~70kg for adults
+    private static final double DEFAULT_WEIGHT_KG = 70.0;
+    
+    // Calorie calculation: Calories = MET × Weight(kg) × Time(hours)
+    // For HICT (High-Intensity Circuit Training) like the 7-minute workout,
+    // we add a 15% bonus for EPOC (Excess Post-exercise Oxygen Consumption) effect
+    // EPOC represents continued calorie burn after high-intensity exercise
+    private static final double EPOC_MULTIPLIER = 1.15;
+    
+    // Final calories per minute calculation:
+    // Base: 6.25 MET × 70kg / 60 min = 7.29 cal/min
+    // With EPOC: 7.29 × 1.15 = 8.39 cal/min
     // Note: This is a rough estimate. Actual calorie burn varies significantly based on
     // individual factors such as weight, age, gender, fitness level, and exercise intensity.
     // The 7-minute workout typically burns between 50-100 calories (7-14 cal/min).
-    private static final double CALORIES_PER_MINUTE = 10.0;
+    private static final double CALORIES_PER_MINUTE = 
+            (AVERAGE_MET_VALUE * DEFAULT_WEIGHT_KG / 60.0) * EPOC_MULTIPLIER;
 
     /**
      * Increment the daily exercise count for today
