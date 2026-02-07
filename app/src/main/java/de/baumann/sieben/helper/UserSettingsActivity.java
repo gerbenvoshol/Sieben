@@ -225,6 +225,65 @@ public class UserSettingsActivity extends AppCompatActivity {
             });
         }
 
+        private void add_weightListener() {
+
+            Preference reset = findPreference("weight");
+
+            reset.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                public boolean onPreferenceClick(Preference pref) {
+
+                    sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    View dialogView = View.inflate(getActivity(), R.layout.seekbar_dialog_weight, null);
+
+                    final TextView edit_title = (TextView) dialogView.findViewById(R.id.textView);
+                    final SeekBar seekBar = (SeekBar) dialogView.findViewById(R.id.seekBar);
+                    String weight = sharedPref.getString("weight", "70");
+                    edit_title.setText(weight);
+                    seekBar.setProgress(Integer.parseInt(weight) - 30);
+                    seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                            String text = Integer.toString(progress + 30);
+                            edit_title.setText(text);
+                        }
+
+                        public void onStartTrackingTouch(SeekBar seekBar) {
+                        }
+
+                        public void onStopTrackingTouch(SeekBar seekBar) {
+                        }
+                    });
+
+                    builder.setView(dialogView);
+                    builder.setTitle(getString(R.string.action_weight));
+                    builder.setPositiveButton(getString(R.string.app_ok), new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                            sharedPref.edit().putString("weight", edit_title.getText().toString()).apply();
+                            final String weightText = getString(R.string.app_chosenTime)
+                                    + " " + sharedPref.getString("weight", "70") + " " + getString(R.string.app_kg)
+                                    + " " + getString(R.string.app_standardTime) + " 70)";
+                            Preference customPref = findPreference("weight");
+                            customPref.setSummary(weightText);
+                        }
+                    });
+                    builder.setNegativeButton(getString(R.string.app_no), new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    final AlertDialog dialog2 = builder.create();
+                    // Display the custom alert dialog on interface
+                    dialog2.show();
+
+                    return true;
+                }
+            });
+        }
+
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -240,6 +299,9 @@ public class UserSettingsActivity extends AppCompatActivity {
             final String durationBreak = getString(R.string.app_chosenTime)
                     + " " + sharedPref.getString("duration2", "10") + " " + getString(R.string.app_sec)
                     + " " + getString(R.string.app_standardTime) + " 10)";
+            final String weightText = getString(R.string.app_chosenTime)
+                    + " " + sharedPref.getString("weight", "70") + " " + getString(R.string.app_kg)
+                    + " " + getString(R.string.app_standardTime) + " 70)";
 
             addPreferencesFromResource(R.xml.user_settings);
             addHelpListener();
@@ -248,6 +310,7 @@ public class UserSettingsActivity extends AppCompatActivity {
             add_duration_break_Listener();
             add_exerciseDurationListener();
             add_statListener();
+            add_weightListener();
 
             new Handler().postDelayed(new Runnable() {
                 public void run() {
@@ -255,6 +318,8 @@ public class UserSettingsActivity extends AppCompatActivity {
                     customPref.setSummary(durationWorkout);
                     Preference customPref2 = findPreference("duration2");
                     customPref2.setSummary(durationBreak);
+                    Preference customPref3 = findPreference("weight");
+                    customPref3.setSummary(weightText);
                 }
             }, 200);
 
